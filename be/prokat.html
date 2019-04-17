@@ -1,0 +1,502 @@
+<html>
+<head>
+<title>Пракат </title>
+<base href="">
+<meta name="Identifier-url" content="http://www.greenteam.by/">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="5 days">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="generator" content="OmCMS v7">
+<meta name="date" content="Apr 07 2017 09:41 AM">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" media="screen" href="../style.css">
+
+<!-- show/hide layers -->
+<script language="JavaScript" type="text/javascript">
+	viewmode = 'none';
+	function expand(str)
+	{
+	s = document.all[str].style.display;
+	if (s == 'none')
+	document.all[str].style.display = 'block';
+	else
+	document.all[str].style.display = 'none';
+	}
+</script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/JsHttpRequest/JsHttpRequest.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.reveal.js"></script>
+<link rel="stylesheet" href="../reveal.css">	
+<style type="text/css">
+	body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+</style>
+  <style type="text/css">
+#toTop {
+ width:100px;
+ background: url("../uploaded/buttons/greenteam_splyu.png") repeat scroll 0% 0% transparent;
+ text-align:center;
+ padding:5px;
+ position:fixed;
+ bottom:30px; /* отступ кнопки от нижнего края страницы*/
+ left:10px;
+ cursor:pointer;
+ color:#333;
+ font-family:verdana;
+ font-size:11px;
+}
+
+ul#jm_sl_navigation li a {background-color:#6b8e23;text-align:left; margin-top: 2px}
+ul#jm_sl_navigation { left:0px;top:40px;}ul#jm_sl_navigation li:hover { margin-left: 0px;}ul#jm_sl_navigation li a { padding: 11px 0px 11px 10px;margin-left: -2px;}ul#jm_sl_navigation .vk a {background-position: 144px 50%;}ul#jm_sl_navigation .ok a {background-position: 144px 50%;}ul#jm_sl_navigation .moymir a {background-position: 144px 50%;}ul#jm_sl_navigation .facebook a {background-position: 142px 50%;}ul#jm_sl_navigation .twitter a {background-position: 145px 50%;}ul#jm_sl_navigation .google a {background-position: 145px 50%;}ul#jm_sl_navigation .myspace a {background-position: 144px 50%;}ul#jm_sl_navigation .youtube a {background-position: 142px 50%;}ul#jm_sl_navigation .linkedin a {background-position: 145px 50%;}ul#jm_sl_navigation .instagram a {background-position: 153px 50%;} 
+ul#jm_sl_navigation li { margin-left: -140px;-webkit-transition: margin-left 0.3s;-moz-transition: margin-left 0.3s;-ms-transition: margin-left 0.3s;-o-transition: margin-left 0.3s;transition: margin-left 0.3s;}
+  </style>
+<script type="text/javascript" language="JavaScript">
+$('#slider_about').cycle({
+fx: 'fade',
+speed: 1000,
+timeout: 2000,
+});
+</script>
+<script type="text/javascript" language="JavaScript">
+function changeBackend(backend){
+	document.getElementById("backend").value = backend;
+	setAction("showList");
+	}
+function doLoad(value,divid) {
+    var req = new JsHttpRequest();
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+			document.getElementById("ajaxWindow").style.visibility = "hidden";
+            if (divid !== undefined) document.getElementById(divid).innerHTML = req.responseText;
+			else document.getElementById("result").innerHTML = req.responseText;
+        }
+    }
+	var bend = "http://www.greenteam.by/ajax_backend.php";
+    req.open(null, bend, true);// 
+    req.send( { q: value } );
+	}
+	
+// Функция апдейтит содержимое нужного DIV-а
+function update(action,divname,bckend) {
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	if (divname !== undefined) doLoad(document.getElementById('f'),divname);
+	else doLoad(document.getElementById('f'));
+	}
+	
+// Второй параметр задает название Backend файла
+function setAction(action,bckend) {
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	doLoad(document.getElementById('f'));
+	}
+function showMenu(id){
+        document.getElementById(id).style.display="block";
+        }
+function hideMenu(id){
+        document.getElementById(id).style.display="none";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+if (navigator.userAgent.indexOf('Opera') != -1) {
+    document.write("<style>.menu { top: 12px  !important; } .contacts_block { top: 48px; }</style>");
+}
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+
+});
+
+
+</script>
+<!-- pageScripts -->
+
+
+</head>
+<body class="mainbody">
+<!--
+	<div id="rotateText">
+	<a id="reformal_tab" href="http://www.greenteam.by/request/" >Онлайн заявка на сплав</a>
+	</div>
+-->
+<!-- <script type="text/javascript" src="http://www.greenteam.by/_jscript/show/snow.js"></script>-->  
+<table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
+<ul id="jm_sl_navigation">
+
+<li class="facebook"><a rel="nofollow" href="https://www.facebook.com/zelyonayakamanda" target="_blank"><div class="text_widget">Facebook</div></a></li>
+<li class="youtube"><a rel="nofollow" href="https://www.youtube.com/channel/UCd1OpVx3o2xDGybaDIPWmnA" target="_blank"><div class="text_widget">Youtube</div></a></li>
+<li class="instagram"><a rel="nofollow" href="https://www.instagram.com/greenteam.by/" target="_blank"><div class="text_widget">Instagram</div></a></li>
+
+</ul>
+<tr><td align="center" valign="top">
+
+<table class="mtable" cellpadding="0" cellspacing="0">
+<tr>
+ <td class="mtleft" valign="top" align="right">
+   <!--<h2 style="position: absolute; text-align: center; top: -4px">Сайт находится в стадии редизайна, поэтому возможны временные сбои.<br>Просим прощения за неудобства.</h2>-->
+  <table cellpadding="0" cellspacing="0">
+   <tr><td><a href="../index.html"><img class="loha" src="../p/loha.png" border="0" alt="Турыстычнае прадпрыемства ЗЯЛЕНАЯ КАМАНДА"></a></td></tr>
+   <div class="leftmenu">
+   <tr><td><div class="menu"><ul><li class='menul_1'><a class='btn' href="index.html">Галоўная</a></li><br><li class='menul_2'><a class='btn' href="news.html">Навiны</a></li><br><li class='menul_3'><a class='btn' href="child.html">Выпускны 2019</a></li><br><li class='menul_4'><a class='btn' href="campchild.html">Дзіцячы летнік</a></li><br><li class='menul_5'><a class='btn' href="excursions.html">Экскурсii па Беларусi</a></li><br><li class='menul_6'><a class='btn' href="ecocamping.html">Экакемпінг</a></li><br><li class='menul_7'><a class='btn' href="gallery.html">Фотагалерэя</a></li><br></ul>
+   </div></td></tr>
+   <tr>
+    <td>
+	 <table style="width:316px;" cellpadding="0" cellspacing="0">
+	  <tr><td>
+	  <div class="contacts_block">
+	          <div id="rotateText">
+        <a id="reformal_tab" href="request/index.html" >Анлайн заяўка на сплыў</a>
+        </div>
+
+<div class="contacts">
+
+<div class="phones">
+  +375 29 151 01 87
+  +375 29 634 09 00
+  +375 29 762 58 40
+</div>
+
+<div class="email">
+  <h1>e-mail:</h1> 
+  <a href="mailto:info@greenteam.by">info@greenteam.by</a>
+</div>
+
+<div class="address">
+223036, вул. Мінская 46, Заслаўе,
+Мінскі раён,<br> Беларусь
+</div>
+
+
+<div class="regnum">
+<a href="../uploaded/licenceGREENTEAM.jpeg" target=_blank><img src="../uploaded/licenceGREENTEAM.jpg" width=150px height=auto ></a>
+<a href="raschet/index.html" target=_blank>
+<h5 style="position:relative; left: 13px; bottom: -10px;">Спосабы аплаты:</h5>
+<img src="../p/logo-raschet.jpg" width=150px; style="position: relative; bottom: -10px;"></a>
+</div>
+
+
+
+</div>
+	  </div>
+</td></tr>
+	  <tr>
+ <td>
+  <div style='width:300px; margin-left:16px; margin-top:30px;'></div>
+ </td>
+</tr>
+	 </table>
+    </td>
+   </tr>
+   </div> <!-- left menu -->
+  </table>
+ </td>
+ <td class="mtright" valign="top" align="left">
+ <table class="rtable" cellpadding="0" cellspacing="0">
+ <tr><td class="rtab" valign="top">
+  <div style="text-align:right; display:block; height:40px; width:620px; float:none;"><table style="width:620px"><tr><td><div class="langsite">
+<div class="lbtnact"><span class="lsvitch">BY</span></div>
+<div class="lbtn"><a class="lsvitch" href="../index.html">RU</a></div>
+<div class="lbtn"><a class="lsvitch" href="../en/index.html">EN</a></div>
+</div></td></tr></table></div>
+  <div class="icons">
+  <div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Сплывы па рэках</div><img class="banicon splyvy" src="../p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="boatinginfo/index.html#weekendbe">Сплывы выходнага дню</a>
+         <a href="boatinginfo/index.html#menu_3">Пракат</a>
+         <a href="boatinginfo/index.html#menu_4">Карпаратыўны сплыў</a>
+         <a href="http://greenteam.by/uploaded/spisok_veshej.pdf">Як апрануцца на сплыў</a>
+         <a href="waterroutesdescriptions/index.html">Водныя маршруты</a>
+   </div>
+</div>
+
+<!--- COMMENTED OUT
+<div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Гарналыжны сезон 2015</div><img class="banicon splyvy" src="./p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="http://www.greenteam.by/be/gtourism2013#GROUP">Групавыя гарналыжныя туры - Славакiя</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#CHILD">Дзіцяча-юнацкі тур - Ціроль</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#BOOKING">Браніраванне пражывання</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#TOURISTS">Для індывідуальных турыстаў</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#SPEC">Спецпрапановы</a>
+   </div>
+</div>
+-->
+
+<div class="static" onmouseover='showMenu("menu2")' onmouseout='hideMenu("menu2")'>
+        <div class="slider_text slider_div"><span>Прыгодніцкія экскурсіі</span></div>
+   <div class="subm subm_center" id="menu2">
+         <a href="alaskachristmas/index.html">Alaska Christmas</a>
+         <a href="child.html">ЛАКОТА ВАШТЭ</a>
+
+
+         </div>
+</div>
+
+
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Дзіцячы летнік</div><img class="banicon" src="../p/sl_e_a.png" />
+   <div class="subm" id="menu3">     
+<a href="campchild.html">Дзіцячы летнiк Зялёная каманда</a>         
+<a href="skischool.html">Веснавы гарналыжны летнік Зялёная каманда</a>
+         
+   </div>
+</div>
+
+
+<!--
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Карпаратывы</div><img class="banicon" src="./p/sl_e_a.png" />
+   <div class="subm" id="menu3">     
+         
+         <a href="http://www.greenteam.by/be/wildwestparty/"> Wild West Adventure</a>
+         <a href="http://www.greenteam.by/be/folkfest/">Фольк Фэст</a>
+         <a href="http://www.greenteam.by/be/boatinginfo/#menu_4">Карпаратыўны сплыў</a>
+         <a href="http://www.greenteam.by/be/turslet/">Турыстычны злёт</a>
+         <a href="http://www.greenteam.by/be/vcourse/">Вяровачны курс</a>
+   </div>
+</div>-->
+  </div>
+  </td></tr>
+ <tr>
+  <td class="tbl" style="height:100%;" valign="top">
+   <div class="mtblock">
+	<h1>Пракат</h1>
+	<hr class="header_hr">
+	<form method="post" name="f" id="f" enctype="multipart/form-data" onsubmit="return false">
+	<input type=hidden id="backend" name="backend" size="30" value="user_userPhotos">
+	<input type=hidden id="action" name="action" size="50" value="showList">
+	<div name="result" id="result" style="padding-left:0px;">
+	<div style="float:none; width: 677px;"><h2>ПРАВИЛА ПРОКАТА<b><br />
+</b></h2>
+<div>- прокат предоставляется после подписания <b>договора проката.</b></div>
+<p>- самовывоз из Заславля либо возможна доставка оборудования по Беларуси.</p>
+<div>- стоимость трансфера &ndash; 0,5 у.е./км (от Заславля)</div>
+<p>- оборудование предоставляется в исправном, чистом и сухом виде, возможные дефекты записываются в договор</p>
+<p>- оборудование возвращается в исправном, чистом и сухом виде, в случае повреждений &ndash; вступают в силу&nbsp;правила <b>договора проката</b></p>
+<p>- антивандальный залог не взымается на период проката, в случае найма инструктора Зеленой команды. <br />
+<a href="../floating.html">см. раздел - Сплавы по рекам</a></p>
+<h3>Стоимость проката туристического оборудования. Сезон апрель &ndash; ноябрь 2013.</h3>
+<table width="100%" cellspacing="0" cellpadding="4" border="0" class="itemstable2">
+ <tbody>
+ <tr>
+ <td><b>№</b></td>
+ <td><b>Наименование</b></td>
+ <td><b>Кол-во дней</b></td>
+ <td><b>Стоимость</b></td>
+ <td><b>Примечание</b></td>
+ </tr>
+ <tr>
+ <td rowspan="4" style="text-align: center;">1</td>
+ <td rowspan="4">
+ <p><b>2х-местный каяк</b>(полиэтилен), 2 весла, 2 жилета <span><a rel="iLoad" href="../uploaded/DSCF9498litt.jpg">см. фото</a></span></p>
+ <span>Либо 2х местное <b>каноэ</b> (стеклопласт), 2 весла, 2 жилета<br />
+ <a rel="iLoad" href="../uploaded/IMG_2649litt.jpg">см. фото</a></span></td>
+ <td>1 день</td>
+ <td rowspan="1">30</td>
+ <td rowspan="4">
+ <div>Антивандальный залог &ndash; 500/лодка</div>
+ </td>
+ </tr>
+ <tr>
+ <td>2 дня</td>
+ <td rowspan="1">55</td>
+ </tr>
+ <tr>
+ <td>3 дня</td>
+ <td rowspan="1">80</td>
+ </tr>
+ <tr>
+ <td>+ новый день</td>
+ <td rowspan="1">15</td>
+ </tr>
+ <tr>
+ <td rowspan="4" style="text-align: center;">2</td>
+ <td rowspan="4">
+ <p><b>1 местный каяк</b> (полиэтелен)</p>
+ 1 весло, 1 жилет<br />
+ <a rel="iLoad" href="../uploaded/DSCF8754.jpg">см.фото</a></td>
+ <td>1 день</td>
+ <td rowspan="1">25</td>
+ <td rowspan="4"><span>Антивандальный залог &ndash; 400/лодка</span></td>
+ </tr>
+ <tr>
+ <td>2 дня</td>
+ <td rowspan="1">50</td>
+ </tr>
+ <tr>
+ <td>3 дня</td>
+ <td rowspan="1">75</td>
+ </tr>
+ <tr>
+ <td>+ новый день</td>
+ <td rowspan="1">15</td>
+ </tr>
+ <tr>
+ <td rowspan="4" style="text-align: center;">3</td>
+ <td rowspan="4">
+ <p><b>2хместная байдарка</b> (ПВХ, каркасно-надувная)</p>
+ Сборка-разборка от Зеленой команды*<br />
+ <a href="../uploaded/vuoksa.jpg" rel="iLoad">см.фото</a></td>
+ <td>1 день</td>
+ <td rowspan="1">30</td>
+ <td rowspan="4"><span>Антивандальный залог &ndash; 250/лодка</span></td>
+ </tr>
+ <tr>
+ <td>2 дня</td>
+ <td rowspan="1">55</td>
+ </tr>
+ <tr>
+ <td>3 дня</td>
+ <td rowspan="1">80</td>
+ </tr>
+ <tr>
+ <td>+ новый день</td>
+ <td rowspan="1">15</td>
+ </tr>
+ <tr>
+ <td rowspan="2" style="text-align: center;">4</td>
+ <td rowspan="2">
+ <p><b>Катамаран с палубой</b> (до 6 пассажиров)</p>
+ Сборка-разборка от Зеленой команды* <a href="../uploaded/handmade.jpg" rel="iLoad">см.фото</a></td>
+ <td>3 дня</td>
+ <td rowspan="1">200</td>
+ <td rowspan="2"><span>Антивандальный залог &ndash; 400/катамаран</span></td>
+ </tr>
+ <tr>
+ <td>+ день</td>
+ <td rowspan="1">40</td>
+ </tr>
+ <tr>
+ <td style="text-align: center;">5</td>
+ <td><b>Юбка &ndash; фартук</b><span> на 2-х местный каяк </span></td>
+ <td>1 день</td>
+ <td>5</td>
+ <td><span>Рекомендуется для походов</span></td>
+ </tr>
+ <tr>
+ <td style="text-align: center;">6</td>
+ <td><b>Юбка &ndash; фартук</b><span> на 1-оместный каяк</span></td>
+ <td>1 день</td>
+ <td>3</td>
+ <td><span>Рекомендуется для походов</span></td>
+ </tr>
+ <tr>
+ <td rowspan="2" style="text-align: center;">7</td>
+ <td rowspan="2"><b>Палатка 3х местная CAMPUS</b>**</td>
+ <td>1 день</td>
+ <td rowspan="1">20</td>
+ <td rowspan="2"></td>
+ </tr>
+ <tr>
+ <td>+ день</td>
+ <td rowspan="1">10</td>
+ </tr>
+ <tr>
+ <td rowspan="2" style="text-align: center;">8</td>
+ <td rowspan="2"><b>Гидромешок</b> **</td>
+ <td>1 день</td>
+ <td rowspan="1">5</td>
+ <td rowspan="2"><span>объем от 30 до 70л</span></td>
+ </tr>
+ <tr>
+ <td>+ день</td>
+ <td rowspan="1">3</td>
+ </tr>
+ </tbody>
+</table>
+<div>*обязательна услуга трансфера</div>
+<p><span>** только как дополнітельная услуга к № 1-4</span></p>
+<div>&nbsp;Описание лодок <a href="../floating.html">см. Сплавы по рекам<u><br />
+</u></a></div></div>
+	</div>
+	</form>
+	<br></div>
+  </td>
+ </tr>
+ <tr>
+  <td class="foot"><span class="smaller">Пры капіяванні матэрылаў просьба указваць спасылку на сайт www.greenteam.by
+<br><a href="../index.html">Зялёная Каманда © 2011-2013</a></span></td>
+ </tr>
+</table>
+ </td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+ 
+<TABLE id="ajaxWindow">
+ <TR>
+  <TD align="center">
+   <TABLE class="tb-image">
+    <TR>
+	 <TD id="here_img"><img class="tn-image" src="../p/loadingAnimation.gif" alt=""></TD>
+	</TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722797-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--<script type="text/javascript" src="http://www.greenteam.by/_jscript/iload/iLoad.js"></script>-->
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	jQuery("a[rel=group]").fancybox({
+		'transitionIn'      : 'none',
+	        'transitionOut'     : 'none',
+	        'titlePosition'     : 'over',
+	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+	                    return '<span id="fancybox-title-over">Фотография ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	                }
+	});
+	
+});
+</script>
+<div id="toTop">Наверх</div>
+<!-- Запросы: 4--></body>
+</html>

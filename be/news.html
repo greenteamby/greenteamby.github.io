@@ -1,0 +1,418 @@
+<html>
+<head>
+<title>Навіны</title>
+<base href="">
+<meta name="Identifier-url" content="http://www.greenteam.by/">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="5 days">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="generator" content="OmCMS v7">
+<meta name="date" content="Mar 11 2014 02:18 PM">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" media="screen" href="../style.css">
+
+<!-- show/hide layers -->
+<script language="JavaScript" type="text/javascript">
+	viewmode = 'none';
+	function expand(str)
+	{
+	s = document.all[str].style.display;
+	if (s == 'none')
+	document.all[str].style.display = 'block';
+	else
+	document.all[str].style.display = 'none';
+	}
+</script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/JsHttpRequest/JsHttpRequest.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.reveal.js"></script>
+<link rel="stylesheet" href="../reveal.css">	
+<style type="text/css">
+	body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+</style>
+  <style type="text/css">
+#toTop {
+ width:100px;
+ background: url("../uploaded/buttons/greenteam_splyu.png") repeat scroll 0% 0% transparent;
+ text-align:center;
+ padding:5px;
+ position:fixed;
+ bottom:30px; /* отступ кнопки от нижнего края страницы*/
+ left:10px;
+ cursor:pointer;
+ color:#333;
+ font-family:verdana;
+ font-size:11px;
+}
+
+ul#jm_sl_navigation li a {background-color:#6b8e23;text-align:left; margin-top: 2px}
+ul#jm_sl_navigation { left:0px;top:40px;}ul#jm_sl_navigation li:hover { margin-left: 0px;}ul#jm_sl_navigation li a { padding: 11px 0px 11px 10px;margin-left: -2px;}ul#jm_sl_navigation .vk a {background-position: 144px 50%;}ul#jm_sl_navigation .ok a {background-position: 144px 50%;}ul#jm_sl_navigation .moymir a {background-position: 144px 50%;}ul#jm_sl_navigation .facebook a {background-position: 142px 50%;}ul#jm_sl_navigation .twitter a {background-position: 145px 50%;}ul#jm_sl_navigation .google a {background-position: 145px 50%;}ul#jm_sl_navigation .myspace a {background-position: 144px 50%;}ul#jm_sl_navigation .youtube a {background-position: 142px 50%;}ul#jm_sl_navigation .linkedin a {background-position: 145px 50%;}ul#jm_sl_navigation .instagram a {background-position: 153px 50%;} 
+ul#jm_sl_navigation li { margin-left: -140px;-webkit-transition: margin-left 0.3s;-moz-transition: margin-left 0.3s;-ms-transition: margin-left 0.3s;-o-transition: margin-left 0.3s;transition: margin-left 0.3s;}
+  </style>
+<script type="text/javascript" language="JavaScript">
+$('#slider_about').cycle({
+fx: 'fade',
+speed: 1000,
+timeout: 2000,
+});
+</script>
+<script type="text/javascript" language="JavaScript">
+function changeBackend(backend){
+	document.getElementById("backend").value = backend;
+	setAction("showList");
+	}
+function doLoad(value,divid) {
+    var req = new JsHttpRequest();
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+			document.getElementById("ajaxWindow").style.visibility = "hidden";
+            if (divid !== undefined) document.getElementById(divid).innerHTML = req.responseText;
+			else document.getElementById("result").innerHTML = req.responseText;
+        }
+    }
+	var bend = "http://www.greenteam.by/ajax_backend.php";
+    req.open(null, bend, true);// 
+    req.send( { q: value } );
+	}
+	
+// Функция апдейтит содержимое нужного DIV-а
+function update(action,divname,bckend) {
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	if (divname !== undefined) doLoad(document.getElementById('f'),divname);
+	else doLoad(document.getElementById('f'));
+	}
+	
+// Второй параметр задает название Backend файла
+function setAction(action,bckend) {
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	doLoad(document.getElementById('f'));
+	}
+function showMenu(id){
+        document.getElementById(id).style.display="block";
+        }
+function hideMenu(id){
+        document.getElementById(id).style.display="none";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+if (navigator.userAgent.indexOf('Opera') != -1) {
+    document.write("<style>.menu { top: 12px  !important; } .contacts_block { top: 48px; }</style>");
+}
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+
+});
+
+
+</script>
+<!-- pageScripts -->
+
+<link rel="stylesheet" media="screen" href="../_modules/news/style.css">
+</head>
+<body class="mainbody">
+<!--
+	<div id="rotateText">
+	<a id="reformal_tab" href="http://www.greenteam.by/request/" >Онлайн заявка на сплав</a>
+	</div>
+-->
+<!-- <script type="text/javascript" src="http://www.greenteam.by/_jscript/show/snow.js"></script>-->  
+<table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
+<ul id="jm_sl_navigation">
+
+<li class="facebook"><a rel="nofollow" href="https://www.facebook.com/zelyonayakamanda" target="_blank"><div class="text_widget">Facebook</div></a></li>
+<li class="youtube"><a rel="nofollow" href="https://www.youtube.com/channel/UCd1OpVx3o2xDGybaDIPWmnA" target="_blank"><div class="text_widget">Youtube</div></a></li>
+<li class="instagram"><a rel="nofollow" href="https://www.instagram.com/greenteam.by/" target="_blank"><div class="text_widget">Instagram</div></a></li>
+
+</ul>
+<tr><td align="center" valign="top">
+
+<table class="mtable" cellpadding="0" cellspacing="0">
+<tr>
+ <td class="mtleft" valign="top" align="right">
+   <!--<h2 style="position: absolute; text-align: center; top: -4px">Сайт находится в стадии редизайна, поэтому возможны временные сбои.<br>Просим прощения за неудобства.</h2>-->
+  <table cellpadding="0" cellspacing="0">
+   <tr><td><a href="../index.html"><img class="loha" src="../p/loha.png" border="0" alt="Турыстычнае прадпрыемства ЗЯЛЕНАЯ КАМАНДА"></a></td></tr>
+   <div class="leftmenu">
+   <tr><td><div class="menu"><ul><li class='menul_1'><a class='btn' href="index.html">Галоўная</a></li><br><li class='menul_2'><a class='btn' href="news.html">Навiны</a></li><br><li class='menul_3'><a class='btn' href="child.html">Выпускны 2019</a></li><br><li class='menul_4'><a class='btn' href="campchild.html">Дзіцячы летнік</a></li><br><li class='menul_5'><a class='btn' href="excursions.html">Экскурсii па Беларусi</a></li><br><li class='menul_6'><a class='btn' href="ecocamping.html">Экакемпінг</a></li><br><li class='menul_7'><a class='btn' href="gallery.html">Фотагалерэя</a></li><br></ul>
+   </div></td></tr>
+   <tr>
+    <td>
+	 <table style="width:316px;" cellpadding="0" cellspacing="0">
+	  <tr><td>
+	  <div class="contacts_block">
+	          <div id="rotateText">
+        <a id="reformal_tab" href="request/index.html" >Анлайн заяўка на сплыў</a>
+        </div>
+
+<div class="contacts">
+
+<div class="phones">
+  +375 29 151 01 87
+  +375 29 634 09 00
+  +375 29 762 58 40
+</div>
+
+<div class="email">
+  <h1>e-mail:</h1> 
+  <a href="mailto:info@greenteam.by">info@greenteam.by</a>
+</div>
+
+<div class="address">
+223036, вул. Мінская 46, Заслаўе,
+Мінскі раён,<br> Беларусь
+</div>
+
+
+<div class="regnum">
+<a href="../uploaded/licenceGREENTEAM.jpeg" target=_blank><img src="../uploaded/licenceGREENTEAM.jpg" width=150px height=auto ></a>
+<a href="raschet/index.html" target=_blank>
+<h5 style="position:relative; left: 13px; bottom: -10px;">Спосабы аплаты:</h5>
+<img src="../p/logo-raschet.jpg" width=150px; style="position: relative; bottom: -10px;"></a>
+</div>
+
+
+
+</div>
+	  </div>
+</td></tr>
+	  <tr>
+ <td>
+  <div style='width:300px; margin-left:16px; margin-top:30px;'></div>
+ </td>
+</tr>
+	 </table>
+    </td>
+   </tr>
+   </div> <!-- left menu -->
+  </table>
+ </td>
+ <td class="mtright" valign="top" align="left">
+ <table class="rtable" cellpadding="0" cellspacing="0">
+ <tr><td class="rtab" valign="top">
+  <div style="text-align:right; display:block; height:40px; width:620px; float:none;"><table style="width:620px"><tr><td><div class="langsite">
+<div class="lbtnact"><span class="lsvitch">BY</span></div>
+<div class="lbtn"><a class="lsvitch" href="../index.html">RU</a></div>
+<div class="lbtn"><a class="lsvitch" href="../en/index.html">EN</a></div>
+</div></td></tr></table></div>
+  <div class="icons">
+  <div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Сплывы па рэках</div><img class="banicon splyvy" src="../p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="boatinginfo/index.html#weekendbe">Сплывы выходнага дню</a>
+         <a href="boatinginfo/index.html#menu_3">Пракат</a>
+         <a href="boatinginfo/index.html#menu_4">Карпаратыўны сплыў</a>
+         <a href="http://greenteam.by/uploaded/spisok_veshej.pdf">Як апрануцца на сплыў</a>
+         <a href="waterroutesdescriptions/index.html">Водныя маршруты</a>
+   </div>
+</div>
+
+<!--- COMMENTED OUT
+<div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Гарналыжны сезон 2015</div><img class="banicon splyvy" src="./p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="http://www.greenteam.by/be/gtourism2013#GROUP">Групавыя гарналыжныя туры - Славакiя</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#CHILD">Дзіцяча-юнацкі тур - Ціроль</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#BOOKING">Браніраванне пражывання</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#TOURISTS">Для індывідуальных турыстаў</a>
+         <a href="http://www.greenteam.by/be/gtourism2013#SPEC">Спецпрапановы</a>
+   </div>
+</div>
+-->
+
+<div class="static" onmouseover='showMenu("menu2")' onmouseout='hideMenu("menu2")'>
+        <div class="slider_text slider_div"><span>Прыгодніцкія экскурсіі</span></div>
+   <div class="subm subm_center" id="menu2">
+         <a href="alaskachristmas/index.html">Alaska Christmas</a>
+         <a href="child.html">ЛАКОТА ВАШТЭ</a>
+
+
+         </div>
+</div>
+
+
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Дзіцячы летнік</div><img class="banicon" src="../p/sl_e_a.png" />
+   <div class="subm" id="menu3">     
+<a href="campchild.html">Дзіцячы летнiк Зялёная каманда</a>         
+<a href="skischool.html">Веснавы гарналыжны летнік Зялёная каманда</a>
+         
+   </div>
+</div>
+
+
+<!--
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Карпаратывы</div><img class="banicon" src="./p/sl_e_a.png" />
+   <div class="subm" id="menu3">     
+         
+         <a href="http://www.greenteam.by/be/wildwestparty/"> Wild West Adventure</a>
+         <a href="http://www.greenteam.by/be/folkfest/">Фольк Фэст</a>
+         <a href="http://www.greenteam.by/be/boatinginfo/#menu_4">Карпаратыўны сплыў</a>
+         <a href="http://www.greenteam.by/be/turslet/">Турыстычны злёт</a>
+         <a href="http://www.greenteam.by/be/vcourse/">Вяровачны курс</a>
+   </div>
+</div>-->
+  </div>
+  </td></tr>
+ <tr>
+  <td class="tbl" style="height:100%;" valign="top">
+   <div class="mtblock">
+	<h1></h1>
+	<hr class="header_hr">
+	<form method="post" name="f" id="f" enctype="multipart/form-data" onsubmit="return false">
+	<input type=hidden id="backend" name="backend" size="30" value="user_userPhotos">
+	<input type=hidden id="action" name="action" size="50" value="showList">
+	<div name="result" id="result" style="padding-left:0px;">
+	<div style="float:none; width: 677px;"><div style='clear:both; margin-top:-8px; margin-bottom:10px; margin-left: 547px;'>
+	<div class='pluso pluso-theme-bewel pluso-round pluso-small'><div class='pluso-more-container'><a class='pluso-more' href='../index.html'></a><ul class='pluso-counter-container'><li></li><li class='pluso-counter'></li><li></li></ul></div><a class='pluso-facebook'></a><a class='pluso-twitter'></a><a class='pluso-vkontakte'></a></div>
+</div><h1>Нашы навiны:</h1><div style="float:none; width:100%; clear:both; margin-top:20px; width:666px"><div><div class='newsD'><span class="newsD">07.04.2017</span></div><a rel="group" href="../uploaded/news/264.jpg" title="Экалагічны сплыў &amp;quot;Чыстая рака 2017&amp;quot;"><img class='newsIcon galbox2' src="../uploaded/news/264s.jpg" width="100" align="left" alt="Экалагічны сплыў &quot;Чыстая рака 2017&quot;" alt="" hspace='4'></a><h5>Экалагічны сплыў &quot;Чыстая рака 2017&quot;</h5><p><p><p>Запрашаем прыняць удзел у экасплыве &quot;Чыстая рака 2017&quot;, прымеркаваным да адкрыцця воднага сезону і міжнароднаму Дню Зямлі 22 красавіка. Экасплыў будзе сумешчаны з ўборкай смецця на рацэ Заходняя Бярэзіна.</p>
+<p>&nbsp;Акрамя самаго сплыву мы зробім вогнішча і лагер ў кемпінгу Засьцянак Скрыплеў (xytap.by), дзе ўсе ўдзельнікі змогуць пагутарыць, паспяваць песьні пад гітару, абмеркаваць новы сезон сплываў.</p>
+<p>Традыцыя правядзення экасплываў пачалася ў 2013 годзе, мы яе працягваем і развіваем. Ужо 4 гады вясной і ўвосені мы прыбіралі Іслач. За ўвесь час мы сабралі больш за 8 тонаў плавучага смецця. У 2016 годзе экасплыў прайшоў асабліва масава і прадуктыўна пры падтрымцы кампаніі EPAM.</p>
+<p><b><u>Праграма экасплыву 22 красавіка (субота):</u></b></p>
+<p>10.00 Збор удзельнікаў.<br />
+11.00 Інструктаж, размеркаванне экіпажаў.<br />
+12.00 &ndash; 17.00 Экасплыў з прыпынкамі для выгрузкі смецця і кава-паўзы.<br />
+17.00 Фініш і трансфер удзельнікаў у Засьцянак Скрыплеў.<br />
+19.00 Вячэра.<br />
+20.00 Вогнішча, сьпевы пад гітару.</p>
+<p>Усе жадаючыя змогуць паставіць намёт і застацца начаваць.</p>
+<p>Арганізатары: Splav.by и &quot;Зялёная каманда&quot;</p>
+<p>Па пытаньням удзелу ў экасплыве звяртайцеся па тэлефонах:<br />
++375 29 151-01-87 Ганна Шкурдзюк<br />
++375 29 168-36-55 Уладзімір Кастэнка</p></p></p></div><hr class='newsRazd'><div><div class='newsD'><span class="newsD">29.11.2016</span></div><a rel="group" href="../uploaded/news/262.jpg" title="Дзіцячы клуб аматараў актыўнага зімовага адпачынку"><img class='newsIcon galbox2' src="../uploaded/news/262s.jpg" width="100" align="left" alt="Дзіцячы клуб аматараў актыўнага зімовага адпачынку" alt="" hspace='4'></a><h5>Дзіцячы клуб аматараў актыўнага зімовага адпачынку</h5><p><p><p>Шаноўныя сябры Зялёнай Каманды!</p>
+<p>Упершыню мы хочам прапанаваць вашым дзеткам уступіць у клуб аматараў актыўнага зімовага адпачынку. Гэта наш новы праэкт 2017 года, у якім мы паспрабуем сумясціць два тэматычных накірунка нашай фірмы: падарожжа на Аляску і беларускія народныя традыцыі. На прагяцу восеньскага летніка было вырашана, што для такіх мерапрыемстваў слова &ldquo;летнік&rdquo; не зусім прыдатнае, па большай частцы гэта клуб&hellip; дзіцячы клуб, у якім прымае удзел невялікая колькасць дзяцей, дзе мы прводзім разам шмат часу, кожны дзень жывем з новымі думкамі і яскравымі падзеямі, як вялікая дружная сям&rsquo;я. Першая частка нашай праграмы будзе прысвечана Алясцы, гэтаму цудоўнаму штату ЗША, яго гісторыі, героям і жыхарам. У другой палове мы будзем рыхтавацца да святкавання беларускага народнага свята Каляд, даведаемя пра старыя традыцыі нашых краёў, будзем калядаваць, завітаем у госці да Бабы Ягі і будзем частаваць калядную вячеру. А пасярэдзіне праграммы будзем праводзіць актыўны дзень з лыжамі, санямі і спадзявацца, што гэтая зіма падорыць нам шмат снегу, як на сапраўднай Алясцы&hellip;</p>
+<p><a href="../uploaded/winter&#32;kidprogram.pdf">Праграма тут</a></p>
+<p><b><u>Даты: <br />
+3-8 студзеня 2017</u></b><b><u>г. (6 дзён)</u></b></p>
+<p><b>Умовы пражывання </b>&ndash; хостэл, адноўленая аўтэнтычная хата канца 30-х гадоў з печкамі, каміннай залай і цеплым санітарным вузлом. Тэрыторыя аграсядзібы Засценак Скрыплева <a href="http://www.xytap.by/">www.xytap.by</a></p>
+<p><b>Харчаванне</b> - дзень ад'езду - вячэра, дзень прыезду - сняданак, стандартны дзень - поўны пансіён.</p>
+<p><b>Узрост удзельнікаў</b> - ад 9 дзеці да 14 гадоў. Хлопчыкі і дзяўчынкі. <br />
+<b>Колькасць удзельнікаў</b> -&nbsp; да 12 чалавек.</p>
+<div><b><u>Кошт удзелу -</u></b>570 BYN</div>
+<p><b><u>Пастаянныя кліенты Зялёнай Каманды - </u></b>540 BYN</p>
+<div><b>Рэгістрацыя ўдзельнікаў:<br />
+</b><a href="mailto:info1@greenteam.by">info1@greenteam.by</a><br />
++375 29&nbsp;151 01 87 <br />
+Вольга</div>
+<p><b>&nbsp;</b>&nbsp;</p></p></p></div><hr class='newsRazd'><div><div class='newsD'><span class="newsD">02.10.2016</span></div><a rel="group" href="../uploaded/news/260.jpg" title="Запрашаем на эка-сплыў па рацэ Іслач"><img class='newsIcon galbox2' src="../uploaded/news/260s.jpg" width="100" align="left" alt="Запрашаем на эка-сплыў па рацэ Іслач" alt="" hspace='4'></a><h5>Запрашаем на эка-сплыў па рацэ Іслач</h5><p><p><p>У 2013 годзе Зялёная Каманда упершыню правяла акцыю па ачыстцы вярхоў&rsquo;еў ракі Іслач ад бытавога смецця. 4 гадзіны сплыву, па вадзе прайшлі ўсяго 6 км і мусілі скончыць, бо лодкі проста перапаўняліся сабраным пластыкам і шклом. З таго часу эка-сплывы сталі адной з самых лепшых традыцый нашай фірмы. Мы спрабуем праводзіць падобныя мерапрыемствы па два разы на год, кожны раз да нас далучаюцаа новыя людзі, не абыякавыя да нашай Радзімы і прыроды.&nbsp;<br />
+<br />
+І сёння мы запрашаем жадючых на закрыццё воднага сезона 2016, на эка-сплыў па рацэ Іслач.&nbsp;<br />
+Дата: 22 кастрычніка 2016 (субота)&nbsp;<br />
+Што ад Вас патрэбна:&nbsp;<br />
+1. Жаданне&nbsp;<br />
+2. Самастойны даезд на месца старта (альбо па замове)&nbsp;<br />
+3. Зарэгістравацца па тэлефоне +37529 151 01 87, Вольга, ці даслаць заяўку на e-mail:&nbsp;<a href="https://vk.com/write?email=info1@greenteam.by" target="_blank">info1@greenteam.by</a>&nbsp;<br />
+4. Пасля рэгістрацыі на працягу 3-х дзён зрабіць аплату за ўдзел у сплыве праз сістэму &laquo;ЕРИП&raquo;&nbsp;<a href="https://vk.com/away.php?to=http%3A%2F%2Fwww.greenteam.by%2Fbe%2Fraschet%2F&amp;post=-51990432_71" target="_blank">http://www.greenteam.by/be/raschet/</a>&nbsp;. Абавязкова даслаць фота квітанцыі. Узнос за ўдзел у сплыве - 20 BYN /персона (грошы пойдуць на тое каб пакрыць сабекошт на арганізацыю, трансфер лодак, пальчаткі, мяшкі для смецця, вываз смецця)&nbsp;<br />
+5. Падрыхтавацца да сплыву&nbsp;<a href="https://vk.com/away.php?to=http%3A%2F%2Fgreenteam.by%2Fuploaded%2Fspisok_veshej.pdf&amp;post=-51990432_71" target="_blank">http://greenteam.by/uploaded/spisok_veshej.pdf</a>&nbsp;<br />
+<br />
+Усім удзельнікам сплыву будуць вывадзены сертыфікаты на права абніжкі 10%, калі вы будзеце карыстацца паслугамі арганізацыі сплываў ад Зялёнай Каманды воднага сезона 2017 года.&nbsp;</p></p></p></div><hr class='newsRazd'><div><div class='newsD'><span class="newsD">23.09.2016</span></div><a rel="group" href="../uploaded/news/258.jpg" title="ДЗІЦЯЧЫ ПРЫГОДНІЦКА-ПАЗНАВАЛЬНЫ ЛЕТНІК &amp;quot;ІНДЫЯНА ДЖОНС&amp;quot; У ПЕРЫЯД ВОСЕНЬСКІХ КАНІКУЛ"><img class='newsIcon galbox2' src="../uploaded/news/258s.jpg" width="100" align="left" alt="ДЗІЦЯЧЫ ПРЫГОДНІЦКА-ПАЗНАВАЛЬНЫ ЛЕТНІК &quot;ІНДЫЯНА ДЖОНС&quot; У ПЕРЫЯД ВОСЕНЬСКІХ КАНІКУЛ" alt="" hspace='4'></a><h5>ДЗІЦЯЧЫ ПРЫГОДНІЦКА-ПАЗНАВАЛЬНЫ ЛЕТНІК &quot;ІНДЫЯНА ДЖОНС&quot; У ПЕРЫЯД ВОСЕНЬСКІХ КАНІКУЛ</h5><p><p><p><b>30.10 - 05.11.2016 <br />
+7 дзён<br />
+</b></p>
+<div><i><b>&nbsp;Дарагія сябры Зялёнай Каманды!</b></i></div>
+<div>&nbsp;<br />
+Ужо другі год да традыцыйных прапановах па дзіцячым турызме мы рыхтуемся да правядзення летніка ў перыяд восеньскіх канікул. Летнік накіраваны на пазнанне гістарычнага мінулага нашай Радзімы праз гульню і падарожжа. Дзяцей чакаюць экскурсіі па замках, знаёмства з цікавымі асобамі з вобласці ваенна-гістарычнай рэканструкцыі, народнымі рамеснікамі. Вечарамі мы часта глядзім мастацкія фільмы гістарычнага зместу, гутарым пра гісторыю, археалогію, нумізматыку, архітэктуру. ... І, як звычайна, мы не адступаем ад прынцыпаў актыўнага адпачынку і спартыўнага турызму. Зарадкі - абавязковыя, пры добрым надвор'і мы заўсёды на вуліцы, на свежым паветры. Замест ноўтбукаў і тэлефонаў у нас дзеці катаюцца на ровары, верхам на кані, сплаўляюцца на каноэ або ідуць у трэкінг. ... І заўсёды ёсць пэўная інтэлектуальная мэта або пазнанне. Кожны летнік Зялёнай Каманды заканчваецца Вялікай Гульнёй. Гульня будзе называцца &laquo;Індыяна Джонс&raquo;, у гонар вядомага фільма пра прыгоды і падарожжа вясёлага археолага. Мы спрабуем зрабіць так, каб кожны ўдзельнік адчуў сябе удалым даследчыкам, такім як Індыяна Джонс. Дзяцей чакаюць загадкі і таямніцы, якія трэба разгадаць, а таксама выпрабаванні, для праходжання якіх спатрэбяцца і сілы, і кемлівасць, і камандны дух.</div>
+<p>Аўтар ідэі летніка,</p>
+<p>Дырэктар Турыстычнага прадпрыемства &laquo;Зялёная Каманда&raquo;</p>
+<p></p>
+<p>Васіль Грынь</p>
+<p><b><a href="../uploaded/campautumn.pdf">Праграма летніка</a></b></p></p></p></div><hr class='newsRazd'><div><div class='newsD'><span class="newsD">01.05.2016</span></div><a rel="group" href="../uploaded/news/255.jpg" title="Экалагічны сплыў па рацэ Іслач"><img class='newsIcon galbox2' src="../uploaded/news/255s.jpg" width="100" align="left" alt="Экалагічны сплыў па рацэ Іслач" alt="" hspace='4'></a><h5>Экалагічны сплыў па рацэ Іслач</h5><p><p><p>&nbsp;23 і 29 красавіка 2016 года па ініцыятыве кампаніі &lt;EPAM&gt; і Пасольства ЗША ў Рэспубліцы Беларусь і пры падтрымцы турыстычнага прадпрыемства &quot;Зялёная каманда&raquo; адбыўся чарговы экалагічны сплыў па рацэ Іслач.</p>
+<div>Асноўная мэта мерапрыемства - ачыстка вярхоў'еў унікальнай, з пункту гледжання прыроднай каштоўнасці, ракі ад бытавога смецця і прадметаў чалавечай жыццядзейнасці.</div>
+<div></div>
+<div>У гэтым годзе ў ачыстцы ракі прыняла ўдзел каля 150 чалавек.</div>
+<div></div></p></p></div><hr class='newsRazd'><div><div class='newsD'><span class="newsD">23.04.2016</span></div><a rel="group" href="../uploaded/news/251.jpg" title="ДЗІЦЯЧЫ ЛЕТНІК “ЗЯЛЁНАЯ КАМАНДА 2016”  "><img class='newsIcon galbox2' src="../uploaded/news/251s.jpg" width="100" align="left" alt="ДЗІЦЯЧЫ ЛЕТНІК “ЗЯЛЁНАЯ КАМАНДА 2016”  " alt="" hspace='4'></a><h5>ДЗІЦЯЧЫ ЛЕТНІК “ЗЯЛЁНАЯ КАМАНДА 2016”  </h5><p><p><p>&nbsp;Пачынаецца рэгістрацыя ўдзельнікаў летніка Зялёная Каманда 2016.</p>
+<p><a href="campchild.html">Праграма летніка</a></p></p></p></div></div></div>
+	</div>
+	</form>
+	<br></div>
+  </td>
+ </tr>
+ <tr>
+  <td class="foot"><span class="smaller">Пры капіяванні матэрылаў просьба указваць спасылку на сайт www.greenteam.by
+<br><a href="../index.html">Зялёная Каманда © 2011-2013</a></span></td>
+ </tr>
+</table>
+ </td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+ 
+<TABLE id="ajaxWindow">
+ <TR>
+  <TD align="center">
+   <TABLE class="tb-image">
+    <TR>
+	 <TD id="here_img"><img class="tn-image" src="../p/loadingAnimation.gif" alt=""></TD>
+	</TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722797-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--<script type="text/javascript" src="http://www.greenteam.by/_jscript/iload/iLoad.js"></script>-->
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	jQuery("a[rel=group]").fancybox({
+		'transitionIn'      : 'none',
+	        'transitionOut'     : 'none',
+	        'titlePosition'     : 'over',
+	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+	                    return '<span id="fancybox-title-over">Фотография ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	                }
+	});
+	
+});
+</script>
+<div id="toTop">Наверх</div>
+<!-- Запросы: 5--></body>
+</html>

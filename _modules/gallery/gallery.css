@@ -1,0 +1,43 @@
+.galIcon{
+border:1px solid #408333;
+padding:2px;
+background:#cff0bf;
+}
+.galPrev{
+padding:6px;
+width:280px;
+height:95px;
+float:left;
+margin:4px;
+background:rgba(1,99,0,0.3);
+border:2px solid #79ca4f;
+border-radius:4px;
+}
+.galPrev:hover{
+background:#53a935;
+border:2px solid #4fa132;
+}
+a.galName{
+display:block;
+width:180px;
+height:80px;
+overflow:hidden;
+font-family:Georgia, Verdana, Arial;
+margin-top:16px;
+font-size:16px;
+color:#fdfc01;
+text-decoration:none;
+}
+a.galName:hover{
+color:#ffffff;
+}
+.galbox2{
+width:140px;
+height:140px;
+margin:4px;
+border:2px solid #014901;
+padding:1px;
+}
+.galbox2:hover{
+border:2px solid #94f26b;
+}

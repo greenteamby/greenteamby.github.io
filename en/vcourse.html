@@ -1,0 +1,405 @@
+<html>
+<head>
+<title>Ropes course : Green Team</title>
+<base href="">
+<meta name="Identifier-url" content="http://www.greenteam.by/">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="5 days">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="generator" content="OmCMS v7">
+<meta name="date" content="Oct 23 2013 08:20 AM">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" media="screen" href="../style.css">
+
+<!-- show/hide layers -->
+<script language="JavaScript" type="text/javascript">
+	viewmode = 'none';
+	function expand(str)
+	{
+	s = document.all[str].style.display;
+	if (s == 'none')
+	document.all[str].style.display = 'block';
+	else
+	document.all[str].style.display = 'none';
+	}
+</script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/JsHttpRequest/JsHttpRequest.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.reveal.js"></script>
+<link rel="stylesheet" href="../reveal.css">	
+<style type="text/css">
+	body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+</style>
+  <style type="text/css">
+#toTop {
+ width:100px;
+ background: url("../uploaded/buttons/greenteam_splyu.png") repeat scroll 0% 0% transparent;
+ text-align:center;
+ padding:5px;
+ position:fixed;
+ bottom:30px; /* отступ кнопки от нижнего края страницы*/
+ left:10px;
+ cursor:pointer;
+ color:#333;
+ font-family:verdana;
+ font-size:11px;
+}
+
+ul#jm_sl_navigation li a {background-color:#6b8e23;text-align:left; margin-top: 2px}
+ul#jm_sl_navigation { left:0px;top:40px;}ul#jm_sl_navigation li:hover { margin-left: 0px;}ul#jm_sl_navigation li a { padding: 11px 0px 11px 10px;margin-left: -2px;}ul#jm_sl_navigation .vk a {background-position: 144px 50%;}ul#jm_sl_navigation .ok a {background-position: 144px 50%;}ul#jm_sl_navigation .moymir a {background-position: 144px 50%;}ul#jm_sl_navigation .facebook a {background-position: 142px 50%;}ul#jm_sl_navigation .twitter a {background-position: 145px 50%;}ul#jm_sl_navigation .google a {background-position: 145px 50%;}ul#jm_sl_navigation .myspace a {background-position: 144px 50%;}ul#jm_sl_navigation .youtube a {background-position: 142px 50%;}ul#jm_sl_navigation .linkedin a {background-position: 145px 50%;}ul#jm_sl_navigation .instagram a {background-position: 153px 50%;} 
+ul#jm_sl_navigation li { margin-left: -140px;-webkit-transition: margin-left 0.3s;-moz-transition: margin-left 0.3s;-ms-transition: margin-left 0.3s;-o-transition: margin-left 0.3s;transition: margin-left 0.3s;}
+  </style>
+<script type="text/javascript" language="JavaScript">
+$('#slider_about').cycle({
+fx: 'fade',
+speed: 1000,
+timeout: 2000,
+});
+</script>
+<script type="text/javascript" language="JavaScript">
+function changeBackend(backend){
+	document.getElementById("backend").value = backend;
+	setAction("showList");
+	}
+function doLoad(value,divid) {
+    var req = new JsHttpRequest();
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+			document.getElementById("ajaxWindow").style.visibility = "hidden";
+            if (divid !== undefined) document.getElementById(divid).innerHTML = req.responseText;
+			else document.getElementById("result").innerHTML = req.responseText;
+        }
+    }
+	var bend = "http://www.greenteam.by/ajax_backend.php";
+    req.open(null, bend, true);// 
+    req.send( { q: value } );
+	}
+	
+// Функция апдейтит содержимое нужного DIV-а
+function update(action,divname,bckend) {
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	if (divname !== undefined) doLoad(document.getElementById('f'),divname);
+	else doLoad(document.getElementById('f'));
+	}
+	
+// Второй параметр задает название Backend файла
+function setAction(action,bckend) {
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	doLoad(document.getElementById('f'));
+	}
+function showMenu(id){
+        document.getElementById(id).style.display="block";
+        }
+function hideMenu(id){
+        document.getElementById(id).style.display="none";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+if (navigator.userAgent.indexOf('Opera') != -1) {
+    document.write("<style>.menu { top: 12px  !important; } .contacts_block { top: 48px; }</style>");
+}
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+
+});
+
+
+</script>
+<!-- pageScripts -->
+
+
+</head>
+<body class="mainbody">
+<!--
+	<div id="rotateText">
+	<a id="reformal_tab" href="http://www.greenteam.by/request/" >Онлайн заявка на сплав</a>
+	</div>
+-->
+<!-- <script type="text/javascript" src="http://www.greenteam.by/_jscript/show/snow.js"></script>-->  
+<table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
+<ul id="jm_sl_navigation">
+
+<li class="facebook"><a rel="nofollow" href="https://www.facebook.com/zelyonayakamanda" target="_blank"><div class="text_widget">Facebook</div></a></li>
+<li class="youtube"><a rel="nofollow" href="https://www.youtube.com/channel/UCd1OpVx3o2xDGybaDIPWmnA" target="_blank"><div class="text_widget">Youtube</div></a></li>
+<li class="instagram"><a rel="nofollow" href="https://www.instagram.com/greenteam.by/" target="_blank"><div class="text_widget">Instagram</div></a></li>
+
+</ul>
+<tr><td align="center" valign="top">
+
+<table class="mtable" cellpadding="0" cellspacing="0">
+<tr>
+ <td class="mtleft" valign="top" align="right">
+   <!--<h2 style="position: absolute; text-align: center; top: -4px">Сайт находится в стадии редизайна, поэтому возможны временные сбои.<br>Просим прощения за неудобства.</h2>-->
+  <table cellpadding="0" cellspacing="0">
+   <tr><td><a href="../index.html"><img class="loha" src="../p/loha.png" border="0" alt="Турыстычнае прадпрыемства ЗЯЛЕНАЯ КАМАНДА"></a></td></tr>
+   <div class="leftmenu">
+   <tr><td><div class="menu"><ul><li class='menul_1'><a class='btn' href="index.html">Home</a></li><br><li class='menul_2'><a class='btn' href="news.html">News</a></li><br><li class='menul_3'><a class='btn' href="campchild.html">Kid Camp</a></li><br><li class='menul_4'><a class='btn' href="excursions.html">Tours In Belarus</a></li><br><li class='menul_5'><a class='btn' href="ecocamping.html">Eco-camping</a></li><br><li class='menul_6'><a class='btn' href="gallery.html">Photo Gallery</a></li><br></ul>
+   </div></td></tr>
+   <tr>
+    <td>
+	 <table style="width:316px;" cellpadding="0" cellspacing="0">
+	  <tr><td>
+	  <div class="contacts_block">
+	          <div id="rotateText">
+        <a id="reformal_tab" href="request/index.html">On-line request for boating</a>
+        </div>
+
+<div class="contacts">
+
+<div class="phones">
+  +375 29 151 01 87
+  +375 29 634 09 00
+  +375 29 762 58 40
+</div>
+
+<div class="email">
+  <h1>e-mail:</h1> 
+  <a href="mailto:info@greenteam.by">info@greenteam.by</a>
+</div>
+
+<div class="address">
+223036, 46 Minskaya str.,<br>
+Zaslaw'e, Minsk region, Belarus
+</div>
+
+
+<div class="regnum">
+<a href="../uploaded/licenceGREENTEAM.jpeg" target=_blank><img src="../uploaded/licenceGREENTEAM.jpg" width=150px height=auto ></a>
+</div>
+</div> 
+	  </div>
+</td></tr>
+	  <tr>
+ <td>
+  <div style='width:300px; margin-left:16px; margin-top:30px;'></div>
+ </td>
+</tr>
+	 </table>
+    </td>
+   </tr>
+   </div> <!-- left menu -->
+  </table>
+ </td>
+ <td class="mtright" valign="top" align="left">
+ <table class="rtable" cellpadding="0" cellspacing="0">
+ <tr><td class="rtab" valign="top">
+  <div style="text-align:right; display:block; height:40px; width:620px; float:none;"><table style="width:620px"><tr><td><div class="langsite">
+<div class="lbtn"><a  class="lsvitch" href="../be/index.html">BY</a></div>
+<div class="lbtn"><a class="lsvitch" href="../index.html">RU</a></div>
+<div class="lbtnact"><span class="lsvitch">EN</span></div>
+</div></td></tr></table></div>
+  <div class="icons">
+  <div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+ <div class="slider_text">Boating in Belarus</div><img class="banicon splyvy" src="../p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="boatinginfo/index.html#menu_1">Weekend boating</a>
+         <a href="boatinginfo/index.html#menu_3">Rent</a>
+         <a href="boatinginfo/index.html#menu_4">Corporate boating</a>
+         <a href="http://greenteam.by/uploaded/spisok_veshej.pdf">Clothing for a river rafting</a>
+         <a href="waterroutesdescriptions/index.html">Water routes</a>
+   </div>
+</div>
+
+<!-- COMMENTED OUT
+<div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Ski Season 2015</div><img class="banicon splyvy" src="./p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="http://www.greenteam.by/en/gtourism2013#GROUP">Group ski tours - Slovakia</a>
+         <a href="http://www.greenteam.by/en/gtourism2013#CHILD">Children and youth tour - Tyrol</a>
+         <a href="http://www.greenteam.by/en/gtourism2013#BOOKING">reservation of accommodation</a>
+         <a href="http://www.greenteam.by/en/gtourism2013#TOURISTS">For individual travelers</a>
+         <a href="http://www.greenteam.by/en/gtourism2013#SPEC">Specialoffers</a>
+   </div>
+</div>-->
+
+
+<div class="static" onmouseover='showMenu("menu2")' onmouseout='hideMenu("menu2")'>
+        <div class="slider_text slider_div"><span>Adventure excursions</span></div>
+   <div class="subm subm_center" id="menu2">
+         <a href="alaskachristmas/index.html">Alaska Christmas</a>
+         <a href="child/index.html">LAKOTA WASTE</a>
+
+    </div>
+</div>
+
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+       <div class="slider_text">Children camps</div><img class="banicon" src="../p/sl_e_a.png" />
+   <div class="subm" id="menu3">
+         <a href="gallery/gallery-59/index.html">Children SUMMER camp</a>
+   </div>
+</div>
+
+<!-- COMMENTED OUT
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+       <div class="slider_text">Corporate Offers</div><img class="banicon" src="./p/sl_e_a.png" />
+   <div class="subm" id="menu3">
+         <a href="http://www.greenteam.by/en/boatinginfo/#menu_4">Corporate Boating</a>         
+         <a href="http://www.greenteam.by/en/turslet/">Tourist meeting</a>
+         <a href="http://www.greenteam.by/en/wildwestparty/"> Wild West Adventure</a>
+         <a href="http://www.greenteam.by/en/folkfest/">Folk Fest</a>
+         <a href="http://www.greenteam.by/en/vcourse/">Roupes Course</a>
+   </div>
+</div>-->
+  </div>
+  </td></tr>
+ <tr>
+  <td class="tbl" style="height:100%;" valign="top">
+   <div class="mtblock">
+	<h1>Ropes course</h1>
+	<hr class="header_hr">
+	<form method="post" name="f" id="f" enctype="multipart/form-data" onsubmit="return false">
+	<input type=hidden id="backend" name="backend" size="30" value="user_userPhotos">
+	<input type=hidden id="action" name="action" size="50" value="showList">
+	<div name="result" id="result" style="padding-left:0px;">
+	<div style="float:none; width: 677px;"><p>It is an outdoor team building activity. <a href="gallery/gallery-28/index.html">See photogallery</a></p>
+<h2>Ropes course</h2>
+<p>The ropes course is a personal and team development training aimed at reaching a number of different goals.</p>
+<h3>The ropes course will help:</h3>
+<ul>
+ <li>To bond a group of people who work by solving particular types of tasks</li>
+ <li>To improve mutual trust in groups</li>
+ <li>To develop self-reliance and confidence in your team</li>
+ <li>To develop persistence in the group when solving general problems</li>
+ <li>To develop the essential qualities of a team player: ability to work in a team and rely on it, determination and self-confidence Company administration will be able to test employees&rsquo; individual qualities as well as their team spirit.</li>
+</ul>
+<p><b><i>Certainly, the Ropes course can be considered as the form of relaxation.</i></b><i> </i><b>But it is secondary!!!</b></p>
+<blockquote>
+<p>A ropes course is a challenging outdoor personal development and team building activity which usually consists of high and/or low elements. Low elements take place on the ground or only a few metres above it. Low ropes courses consist of a series of real and imaginary obstacles designed to challenge groups and individuals to work together to accomplish a task. An experienced instructor will help them to do it. Here people will reach a number of educational and recreational goals. Ropes course generally focuses on personal achievements and helps to confront fears and anxieties. Challenges may be physical and/or emotional. Low ropes course elements are most often designed to explore group interaction, problem-solving, leadership, self-confidence, positive risk taking, cohesion, trust, self esteem, goal setting, teamwork.</p>
+<p>High elements are usually constructed in trees and require a belay for safety. Courses usually range from 25 feet to 50 feet tall. Here you can find hanging logs, ladders, tires and a lot of different and interesting things. The major difference here is individual orientation. Decisions are being taken by individuals. Anyone over 12 years old without mental diseases can participate in this course</p>
+</blockquote>
+<h5>It doesn&rsquo;t matter whether you are a sportsman or not. &quot;Citius, altius, fortius&quot; is not the slogan of the ropes course. There is neither the first one nor the last one, neither winners nor losers in this adventure!</h5>
+<p>Ropes course is held at any season, at any time of the day and weather conditions except for the extreme ones (a blizzard, a downpour, a snowfall, etc.).</p>
+<p>The ropes course instructors possess all the necessary professional skills and knowledge to protect people while they overcoming obstacles.&nbsp;<br />
+The minimum quantity of participants is 8-10 people, the maximum is 60. People are divided into groups consisting of 8-15 persons.</p>
+<h4>Place</h4>
+<p>Low level ropes course is held practically at any place in Belarus. High level one is carried out in a specially equipped area.<br />
+<b>Mobile +375296318569</b><br />
+<a href="http://info@greenteam.by">info@greenteam.by</a></p>
+<p><i><b>Just try! It is interesting, useful, unusual and not scary at all!!!</b></i></p>
+<h2>R o p e s &nbsp; &nbsp;c o u r s e</h2>
+<h3>Attachment</h3>
+<h4>What to wear?</h4>
+<p>Ropes course is held in any weather, therefore put on proper clothes. Don&rsquo;t think that if it has been sunny in the morning there will be no rain in the evening. Even on a sunny day take a warm sweater and a water-proof windcheater with a hood.</p>
+<p>Ropes course is held in a forest therefore you should wear sport clothing which covers your hands and legs completely, put on a cap or tie a head scarf. All these will save you from insects and acute branches. The insect repellent spray will also be helpful and protect you from stings.</p>
+<p>Your pair of jeans might work as well, just stay away from skirts and evening gowns. Footwear - snickers and athletic shoes. Trekking boots will be the perfect choice at any weather.</p>
+<h4>What to bring with you?</h4>
+<p>Take a small medicine chest with a plaster, brilliant green (antiseptic), a bandage, an insect repellent. There is a lot of pollen in forests, especially in spring. If you are sure you do not have any allergies you do not have to bring any allergy medicine. You will not need a camera. If you participate in the ropes course, you simply will not have time for taking pictures unless you want to take a few during the dinner or before the departure.</p>
+<h4>Alcohol?</h4>
+<p>You can take alcohol at your own risk, but remember that it can be dangerous for your health, especially when you take part in the ropes course. An instructor reserves the right to make any participant who is under the influence of alcohol leave the ropes course to assure everyone&rsquo;s safety.</p>
+<h4>What is the duration of the ropes course?</h4>
+<p>Usually we schedule up to 9 ropes course stages at the low level. It is possible to begin at 11.00 AM and finish it at 18.00 PM (2 lunch hours included). We can spread the low level ropes course in two days as well.</p>
+<h2>It is forbidden:</h2>
+<ul>
+ <li>To demand details on overcoming obstacles before beginning the ropes course</li>
+ <li>To be present in any area of the rope course before the start</li>
+</ul>
+<h2>GENERAL RECOMMENDATIONS:</h2>
+<ul>
+ <li>Begin with the low level ropes course and do not force the events by jumping to the high level right away.</li>
+ <li>It will be better if people who take part in the ropes course will work together for the same company</li>
+</ul>
+<h2>OTHER POSSIBILITIES:</h2>
+<ul>
+ <li>Organization of tourist gatherings (meetings) for corporations</li>
+ <li>Organization of hiking tours, boating, cycle trips etc. in Belarus</li>
+ <li>Booking houses in Belarus</li>
+ <li>Tours in Belarus for groups and individuals</li>
+ <li>Teambuilding hiking trips with survival elements</li>
+</ul><div style='clear:both; margin-top:-8px; margin-bottom:10px; margin-left: 547px;'>
+	<div class='pluso pluso-theme-bewel pluso-round pluso-small'><div class='pluso-more-container'><a class='pluso-more' href='../index.html'></a><ul class='pluso-counter-container'><li></li><li class='pluso-counter'></li><li></li></ul></div><a class='pluso-facebook'></a><a class='pluso-twitter'></a><a class='pluso-vkontakte'></a></div>
+</div></div>
+	</div>
+	</form>
+	<br></div>
+  </td>
+ </tr>
+ <tr>
+  <td class="foot"><span class="smaller">When copying materials please refer to our website www.greenteam.by
+<br><a href="../index.html">Green Team © 2011-2013</a></span></td>
+ </tr>
+</table>
+ </td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+ 
+<TABLE id="ajaxWindow">
+ <TR>
+  <TD align="center">
+   <TABLE class="tb-image">
+    <TR>
+	 <TD id="here_img"><img class="tn-image" src="../p/loadingAnimation.gif" alt=""></TD>
+	</TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722797-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--<script type="text/javascript" src="http://www.greenteam.by/_jscript/iload/iLoad.js"></script>-->
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	jQuery("a[rel=group]").fancybox({
+		'transitionIn'      : 'none',
+	        'transitionOut'     : 'none',
+	        'titlePosition'     : 'over',
+	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+	                    return '<span id="fancybox-title-over">Фотография ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	                }
+	});
+	
+});
+</script>
+<div id="toTop">Наверх</div>
+<!-- Запросы: 4--></body>
+</html>

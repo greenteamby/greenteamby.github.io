@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>Детско-юношеский  лагерь «Зеленая команда»</title>
+<base href="">
+<meta name="Identifier-url" content="http://www.greenteam.by/">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="5 days">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="generator" content="OmCMS v7">
+<meta name="date" content="Apr 09 2018 07:57 AM">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" media="screen" href="style.css">
+
+<!-- show/hide layers -->
+<script language="JavaScript" type="text/javascript">
+	viewmode = 'none';
+	function expand(str)
+	{
+	s = document.all[str].style.display;
+	if (s == 'none')
+	document.all[str].style.display = 'block';
+	else
+	document.all[str].style.display = 'none';
+	}
+</script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/JsHttpRequest/JsHttpRequest.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.reveal.js"></script>
+<link rel="stylesheet" href="reveal.css">	
+<style type="text/css">
+	body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+</style>
+  <style type="text/css">
+#toTop {
+ width:100px;
+ background: url("uploaded/buttons/greenteam_splyu.png") repeat scroll 0% 0% transparent;
+ text-align:center;
+ padding:5px;
+ position:fixed;
+ bottom:30px; /* отступ кнопки от нижнего края страницы*/
+ left:10px;
+ cursor:pointer;
+ color:#333;
+ font-family:verdana;
+ font-size:11px;
+}
+
+ul#jm_sl_navigation li a {background-color:#6b8e23;text-align:left; margin-top: 2px}
+ul#jm_sl_navigation { left:0px;top:40px;}ul#jm_sl_navigation li:hover { margin-left: 0px;}ul#jm_sl_navigation li a { padding: 11px 0px 11px 10px;margin-left: -2px;}ul#jm_sl_navigation .vk a {background-position: 144px 50%;}ul#jm_sl_navigation .ok a {background-position: 144px 50%;}ul#jm_sl_navigation .moymir a {background-position: 144px 50%;}ul#jm_sl_navigation .facebook a {background-position: 142px 50%;}ul#jm_sl_navigation .twitter a {background-position: 145px 50%;}ul#jm_sl_navigation .google a {background-position: 145px 50%;}ul#jm_sl_navigation .myspace a {background-position: 144px 50%;}ul#jm_sl_navigation .youtube a {background-position: 142px 50%;}ul#jm_sl_navigation .linkedin a {background-position: 145px 50%;}ul#jm_sl_navigation .instagram a {background-position: 153px 50%;} 
+ul#jm_sl_navigation li { margin-left: -140px;-webkit-transition: margin-left 0.3s;-moz-transition: margin-left 0.3s;-ms-transition: margin-left 0.3s;-o-transition: margin-left 0.3s;transition: margin-left 0.3s;}
+  </style>
+<script type="text/javascript" language="JavaScript">
+$('#slider_about').cycle({
+fx: 'fade',
+speed: 1000,
+timeout: 2000,
+});
+</script>
+<script type="text/javascript" language="JavaScript">
+function changeBackend(backend){
+	document.getElementById("backend").value = backend;
+	setAction("showList");
+	}
+function doLoad(value,divid) {
+    var req = new JsHttpRequest();
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+			document.getElementById("ajaxWindow").style.visibility = "hidden";
+            if (divid !== undefined) document.getElementById(divid).innerHTML = req.responseText;
+			else document.getElementById("result").innerHTML = req.responseText;
+        }
+    }
+	var bend = "http://www.greenteam.by/ajax_backend.php";
+    req.open(null, bend, true);// 
+    req.send( { q: value } );
+	}
+	
+// Функция апдейтит содержимое нужного DIV-а
+function update(action,divname,bckend) {
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	if (divname !== undefined) doLoad(document.getElementById('f'),divname);
+	else doLoad(document.getElementById('f'));
+	}
+	
+// Второй параметр задает название Backend файла
+function setAction(action,bckend) {
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	doLoad(document.getElementById('f'));
+	}
+function showMenu(id){
+        document.getElementById(id).style.display="block";
+        }
+function hideMenu(id){
+        document.getElementById(id).style.display="none";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+if (navigator.userAgent.indexOf('Opera') != -1) {
+    document.write("<style>.menu { top: 12px  !important; } .contacts_block { top: 48px; }</style>");
+}
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+
+});
+
+
+</script>
+<!-- pageScripts -->
+
+
+</head>
+<body class="mainbody">
+<!--
+	<div id="rotateText">
+	<a id="reformal_tab" href="http://www.greenteam.by/request/" >Онлайн заявка на сплав</a>
+	</div>
+-->
+<!-- <script type="text/javascript" src="http://www.greenteam.by/_jscript/show/snow.js"></script>-->  
+<table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
+<ul id="jm_sl_navigation">
+
+<li class="facebook"><a rel="nofollow" href="https://www.facebook.com/zelyonayakamanda" target="_blank"><div class="text_widget">Facebook</div></a></li>
+<li class="youtube"><a rel="nofollow" href="https://www.youtube.com/channel/UCd1OpVx3o2xDGybaDIPWmnA" target="_blank"><div class="text_widget">Youtube</div></a></li>
+<li class="instagram"><a rel="nofollow" href="https://www.instagram.com/greenteam.by/" target="_blank"><div class="text_widget">Instagram</div></a></li>
+
+</ul>
+<tr><td align="center" valign="top">
+
+<table class="mtable" cellpadding="0" cellspacing="0">
+<tr>
+ <td class="mtleft" valign="top" align="right">
+   <!--<h2 style="position: absolute; text-align: center; top: -4px">Сайт находится в стадии редизайна, поэтому возможны временные сбои.<br>Просим прощения за неудобства.</h2>-->
+  <table cellpadding="0" cellspacing="0">
+   <tr><td><a href="index.html"><img class="loha" src="p/loha.png" border="0" alt="Турыстычнае прадпрыемства ЗЯЛЕНАЯ КАМАНДА"></a></td></tr>
+   <div class="leftmenu">
+   <tr><td><div class="menu"><ul><li class='menul_1'><a class='btn' href="index.html">Главная</a></li><br><li class='menul_2'><a class='btn' href="news.html">Новости</a></li><br><li class='menul_3'><a class='btn' href="child.html">Выпускной 2019</a></li><br><li class='menul_4'><a class='btn' href="campchild.html">Детский  лагерь</a></li><br><li class='menul_5'><a class='btn' href="excursions.html">Экскурсии по Беларуси</a></li><br><li class='menul_6'><a class='btn' href="ecocamping.html">Экокемпинг</a></li><br><li class='menul_7'><a class='btn' href="gallery.html">Фотогалерея</a></li><br></ul>
+   </div></td></tr>
+   <tr>
+    <td>
+	 <table style="width:316px;" cellpadding="0" cellspacing="0">
+	  <tr><td>
+	  <div class="contacts_block">
+	          <div id="rotateText">
+        <a id="reformal_tab" href="request/index.html" >Онлайн заявка на сплав</a>
+        </div>
+
+<div class="contacts">
+
+<div class="phones">
+  +375 29 151 01 87
+  +375 29 634 09 00
+  +375 29 762 58 40
+</div>
+
+<div class="email">
+  <h1>e-mail:</h1> 
+  <a href="mailto:info@greenteam.by">info@greenteam.by</a>
+</div>
+
+<div class="address">
+223036, ул. Минская 46, г. Заславль, Минский район, Беларусь
+</div>
+
+<div class="regnum">
+<a href="uploaded/licenceGREENTEAM.jpeg" target=_blank><img src="uploaded/licenceGREENTEAM.jpg" width=150px height=auto ></a>
+<a href="be/raschet/index.html" target=_blank>
+<h5 style="position:relative; left: 13px; bottom: -10px;">Способы оплаты:</h5>
+<img src="p/logo-raschet.jpg" width=150px; style="position: relative; bottom: -10px;"></a>
+</div>
+</div>
+
+       
+	  </div>
+</td></tr>
+	  <tr>
+ <td>
+  <div style='width:300px; margin-left:16px; margin-top:30px;'></div>
+ </td>
+</tr>
+	 </table>
+    </td>
+   </tr>
+   </div> <!-- left menu -->
+  </table>
+ </td>
+ <td class="mtright" valign="top" align="left">
+ <table class="rtable" cellpadding="0" cellspacing="0">
+ <tr><td class="rtab" valign="top">
+  <div style="text-align:right; display:block; height:40px; width:620px; float:none;"><table style="width:620px"><tr><td><div class="langsite">
+<div class="lbtn"><a class="lsvitch" href="be/index.html">BY</a></div>
+<div class="lbtnact"><span class="lsvitch">RU</span></div>
+<div class="lbtn"><a class="lsvitch" href="en/index.html">EN</a></div>
+</div></td></tr></table></div>
+  <div class="icons">
+  <div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Сплавы по рекам</div><img class="banicon splyvy" src="p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="boatinginfo/index.html#weekend">Сплавы выходного дня</a>
+         <a href="boatinginfo/index.html#menu_3">Прокат</a>
+         <a href="boatinginfo/index.html#menu_4">Корпоративный сплав</a>
+         <a href="http://greenteam.by/uploaded/spisok_veshej.pdf">Как одеться на сплав</a>
+         <a href="waterroutesdescriptions/index.html">Водные маршруты</a>
+   </div>
+</div>
+
+<!--COMMENTED OUT
+
+<div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Горнолыжный сезон 2015</div><img class="banicon splyvy" src="./p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="http://www.greenteam.by/gtourism2013#GROUP">Групповые горнолыжные туры - Словакия</a>
+         <a href="http://www.greenteam.by/gtourism2013#CHILD">Детско-юношеский тур - Тироль</a>
+         <a href="http://www.greenteam.by/gtourism2013#BOOKING">Бронирование проживания</a>
+         <a href="http://www.greenteam.by/gtourism2013#TOURISTS">Для индивидуальных туристов</a>
+         <a href="http://www.greenteam.by/gtourism2013#SPEC">Спецпредложения</a>
+   </div>
+</div>-->
+
+<div class="static" onmouseover='showMenu("menu2")' onmouseout='hideMenu("menu2")'>
+        <div class="slider_text slider_div"><span>Приключенческие экскурсии</span></div>
+   <div class="subm subm_center" id="menu2">
+         <a href="alaskachristmas/index.html">Alaska Christmas</a>
+         <a href="child/index.html">ЛАКОТА ВАШТЭ</a>
+
+         </div>
+</div>
+
+
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Детский лагерь</div><img class="banicon" src="p/sl_e_a.png" />
+   <div class="subm" id="menu3">
+         <a href="campchild.html">Летний лагерь Зелёная Команда</a>
+         <a href="skischool.html">Весенний лагерь Зелёная Команда</a>
+        
+   </div>
+</div>
+  </div>
+  </td></tr>
+ <tr>
+  <td class="tbl" style="height:100%;" valign="top">
+   <div class="mtblock">
+	<h1>СПОРТИВНО ЭКОЛОГИЧЕСКИЙ ЛАГЕРЬ «ЗЕЛЕНАЯ КОМАНДА»</h1>
+	<hr class="header_hr">
+	<form method="post" name="f" id="f" enctype="multipart/form-data" onsubmit="return false">
+	<input type=hidden id="backend" name="backend" size="30" value="user_userPhotos">
+	<input type=hidden id="action" name="action" size="50" value="showList">
+	<div name="result" id="result" style="padding-left:0px;">
+	<div style="float:none; width: 677px;"><h2></h2>
+<h2>ДЕТСКИЙ ЛАГЕРЬ &laquo;ЗЕЛЕНАЯ КОМАНДА 2018&raquo;&nbsp;</h2>
+<p><a href="gallery/gallery-79/index.html"><img src="uploaded/buttons/icon_photo.png" alt="" />см.фотогалерею</a></p>
+<h2><b><u>&nbsp;1 смена:</u></b></h2>
+<h3>Возраст 9-14 лет. Мальчишки. Даты 02.07-13.07.2018.&nbsp;</h3>
+<h2></h2>
+<h2><b><u>В стоимость входит:</u></b></h2>
+<div>
+<p><b>Проживание:</b> в палатках на территории эко-кемпинга Застенок Скриплево.</p>
+<p><b>Питание:</b> 4-х разовое (завтрак, обед, полдник, ужин)</p>
+<p><b>В программе:</b> <br />
+Спортивное ориентирование<br />
+Скалолазание<br />
+Туристическая подготовка <br />
+Техника горно-пешеходного&nbsp;туризма <br />
+Велопробеги<br />
+ОФП&nbsp;<br />
+Сплавы на каяках по р.Западная Березина<br />
+Стрельба из лука<br />
+Радиальные трекинговые выходы</p>
+<p>Вечерний киносеанс<br />
+Народные ремесла.</p>
+<div>Экскурсионный день</div>
+
+Полный информационный пакет (Правила лагеря, Техника безопасности, Список вещей, Договор с клиентом) прилагается во время собеседования с кандидатом и родителями. Заявка и оформление необходимых документов на участие в лагере происходит не позднее 3-х недель до начала смены после личного собеседования с родителями и ребенком.</div>
+<div>
+<h2><u><b>2 СМЕНА:</b></u></h2>
+<h3>Возраст 12-15 лет. Юноши и девушки. Даты 16-22.07.2018.&nbsp;</h3>
+</div>
+<div>
+<p>Основа второй смены &ndash; мультипоход: пеший, водный, вело (регион - предварительно РПоссонский район).<b><br />
+</b>Также планируются радиальные велосипедные выезды и 1 экскурсионный день.</p>
+<b><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&#10;Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;&#10;mso-ansi-language:RU;mso-fareast-language:RU;mso-bidi-language:AR-SA">Питание:</span></b><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&#10;Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;&#10;mso-ansi-language:RU;mso-fareast-language:RU;mso-bidi-language:AR-SA"> 3-х разовое&nbsp;</span></div>
+<h3><u><b>Бронирование места </b></u><b>&ndash; 30% предоплата. </b></h3>
+<h3></h3>
+<h3><b><u>Заявки</u> отправлять на адрес <a href="mailto:info1@greenteam.by">info1@greenteam.by</a>&nbsp; (указать: ф.и. ребенка, дату рождения, смену, ф.и.о. родителя, контактный телефон; паспортные данные родителя, с которым будет заключаться договор, если в первый раз - от кого узнали про лагерь)<br />
+</b></h3>
+<h2><b> </b></h2>
+<h3><b> </b></h3>
+<hr />
+<h3></h3>
+<h3></h3>
+<h2>История лагеря</h2>
+<p>19 лет тому назад мы провели наш первый туристический лагерь для детей в Беларуси. Тогда участников было всего 6 мальчишек. Лагерь проходил на берегу реки Клева, приток реки Березина. Кроме туристических занятий мы также принимали участие в археологических раскопках.&nbsp;</p>
+<p>Затем мы несколько лет проводили лагерь в Браславском районе, затем несколько лет в Россонском. С того времени не было ни одного лета, чтобы лагерь не состоялся. Иногда менялось название лагеря, но не менялась идея и суть. Содержание программ&nbsp;обновлялась новыми курсами, что делало лагерь интересным для постоянных участников. Несколько поколений детей, которые уже выросли, проводили 5-7 лет, каждое лето, в нашем лагере и сейчас, эти молодые люди с теплотой вспоминают свои юношеские приключения. Поэтому, со временем, спортивно-туристический детский лагерь&nbsp;стал нашей фирменной маркой качества и профессиональной гордостью.&nbsp;</p>
+<p>Традиционно, многие годы лагерь проходит в июле. Теперь у нас собственная базовая территория, с оборудованным кемпингом, скалодромом, прокатом велосипедов и флотилией байдарок и каноэ&hellip; Все это еще сильнее укрепило качество наших услуг для молодых клиентов Зеленой команды. Поэтому, надеемся, что еще не один год мы будем собирать молодых друзей под флаг нашего лагеря!</p>
+<p><a href="https://www.facebook.com/media/set/?set=a.452432938227482.1073741851.226069030863875&amp;type=3" target="_blank"><img src="uploaded/buttons/icon_photo.png" alt="" />См.фотоотчет</a></p>
+<p>Это нестандартное предложение по организации детского отдыха. Используя сочетание спорта, активного отдыха, игрового образования и экологического образования, мы предлагаем организацию детских туров в Беларуси. Живя в лесу, среди рек и лесов Беларуси, ребята будут участвовать в экологических мероприятиях. На протяжении всего времени, под опекой спортивных инструкторов, ребята&nbsp; будут заниматься разными видами спортивного туризма: будут учиться ориентироваться по компасу, ходить в пешие походы, учиться раскладывать костер, вязать узлы, овладеют искусством сплава на каяке и каноэ, основами скалолазания, а также регулярно заниматься ОФП и народным танцем. Заканчивается лагерь традиционно - увлекательной командной игрой. Её главная цель &ndash; найти древний клад, используя знания, умения и физическую подготовку, полученную в лагере.&nbsp;</p>
+<h2>НАШИ ЦЕЛИ</h2>
+<ul>
+ <li>физическая подготовка (рукопашный бой, бокс и обще - физическая подготовка)</li>
+ <li>туристическая подготовка (спортивный туризм, ориентирование, основы лазания)</li>
+ <li>выживание в дикой природе лесной среднеевропейской зоны (знание леса, его флоры и фауны)</li>
+ <li>экологическое воспитание (охрана природы, гармония жизни человека и природы)</li>
+ <li>интеллектуальная подготовка (сферы: краеведение, история, археология, этнография, медицина)</li>
+ <li>помощь семье в формировании у ребенка объективных жизненных ценностей</li>
+</ul>
+<h2>НАША УБЕЖДЕННОСТЬ</h2>
+<p>Мы не занимаемся воспитанием детей. Это исключительная прерогатива семьи. Мы создаем условия, которые вынуждают ребенка к самовоспитанию, самоорганизации, самооценке, терпению трудностей связанных с физическими нагрузками, умением жить и уживаться с товарищами, формировать уважение к своим сверстникам.&nbsp;</p>
+<h2>ВАЖНЫЙ ПРИНЦИП - ДИСЦИПЛИНА</h2>
+<p>Жизнь лагеря, маленькой модели общества, происходит в лесу, лес &ndash; наш добрый друг, но и в обществе и в лесу нужно жить по определенным правилам, лишь при неукоснительном их соблюдении руководство лагеря гарантирует достижение целей поставленных нами. Поэтому выполнение Правил лагеря и техники безопасности является первым условием принятия в лагерь.</p>
+<h3>Условия участия в программе:</h3>
+<ul>
+ <li>соблюдение Правил и техники безопасности лагеря.</li>
+ <li>средняя физическая подготовка</li>
+ <li>отсутствие хронических пищеварительных и сердечно-сосудистых заболеваний, при заявке на участие требуется письменное разрешение медработника</li>
+</ul>
+<p>Максимальное количество участников одной смены &ndash; до 33 человек, возраст участников от 9 до 14 лет. <u><b>Исключительно мальчики.</b></u></p>
+<p>Питание. 4-х разовое (завтрак, обед, полдник, ужин).</p>
+<h2>ПЕДСОСТАВ</h2>
+<p>Педагогический коллектив лагеря состоит из сотрудников и преподавателей, возрастом 20-40 лет:</p>
+<ul>
+ <li>начальник лагеря (главный педагог)</li>
+ <li>инструктор оп ОФП</li>
+ <li>инструкторы по спортивному туризму</li>
+ <li>медработник</li>
+ <li>техперсонал и служба безопасности (охрана), транспортная служба</li>
+</ul>
+<p>Полный информационный пакет (Правила лагеря, Техника безопасности, Список вещей, Договор с клиентом) прилагается во время собеседования с кандидатом и родителями..Заявка и оформление необходимых документов на участие в лагере происходит не позднее 3-х недель до начала смены после личного собеседования с родителями и ребенком.</p>
+<p><i>Автор идеи и руководитель Лагеря &laquo;Зеленая команда&raquo;<br />
+Грынь В.В.</i></p><div style='clear:both; margin-top:-8px; margin-bottom:10px; margin-left: 547px;'>
+	<div class='pluso pluso-theme-bewel pluso-round pluso-small'><div class='pluso-more-container'><a class='pluso-more' href='index.html'></a><ul class='pluso-counter-container'><li></li><li class='pluso-counter'></li><li></li></ul></div><a class='pluso-facebook'></a><a class='pluso-twitter'></a><a class='pluso-vkontakte'></a></div>
+</div></div>
+	</div>
+	</form>
+	<br></div>
+  </td>
+ </tr>
+ <tr>
+  <td class="foot"><span class="smaller">При копировании материалов просьба указывать ссылку на сайт www.greenteam.by
+<br><a href="index.html">Зеленая Команда © 2011-2013</a></span></td>
+ </tr>
+</table>
+ </td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+ 
+<TABLE id="ajaxWindow">
+ <TR>
+  <TD align="center">
+   <TABLE class="tb-image">
+    <TR>
+	 <TD id="here_img"><img class="tn-image" src="p/loadingAnimation.gif" alt=""></TD>
+	</TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722797-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--<script type="text/javascript" src="http://www.greenteam.by/_jscript/iload/iLoad.js"></script>-->
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	jQuery("a[rel=group]").fancybox({
+		'transitionIn'      : 'none',
+	        'transitionOut'     : 'none',
+	        'titlePosition'     : 'over',
+	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+	                    return '<span id="fancybox-title-over">Фотография ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	                }
+	});
+	
+});
+</script>
+<div id="toTop">Наверх</div>
+<!-- Запросы: 4--></body>
+</html>

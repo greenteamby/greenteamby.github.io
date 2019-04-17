@@ -1,0 +1,471 @@
+<html>
+<head>
+<title>Фотогалерея</title>
+<base href="">
+<meta name="Identifier-url" content="http://www.greenteam.by/">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="5 days">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="фотографии, Драгобрад, Корпоративная база, Горный туризм, Апартаменты Юрспорт. Словакия, Горные лыжи,  Активный туризм в Беларуси, Экокрок &amp;amp; Индиана, Детская анимация, Веревочный курс, Рождественская вечеринка на ковбойском ранчо, Tourism &amp;amp; Fun фестиваль, Фольк программы">
+<meta name="description" content="Туристическое предприятие &quot;Зеленая команда&quot;: Фотогалереи">
+<meta name="generator" content="OmCMS v7">
+<meta name="date" content="Oct 27 2012 12:04 PM">
+<meta name="revisit-after" content="7 days">
+<link rel="stylesheet" media="screen" href="../style.css">
+
+<!-- show/hide layers -->
+<script language="JavaScript" type="text/javascript">
+	viewmode = 'none';
+	function expand(str)
+	{
+	s = document.all[str].style.display;
+	if (s == 'none')
+	document.all[str].style.display = 'block';
+	else
+	document.all[str].style.display = 'none';
+	}
+</script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/JsHttpRequest/JsHttpRequest.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.reveal.js"></script>
+<link rel="stylesheet" href="../reveal.css">	
+<style type="text/css">
+	body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+</style>
+  <style type="text/css">
+#toTop {
+ width:100px;
+ background: url("../uploaded/buttons/greenteam_splyu.png") repeat scroll 0% 0% transparent;
+ text-align:center;
+ padding:5px;
+ position:fixed;
+ bottom:30px; /* отступ кнопки от нижнего края страницы*/
+ left:10px;
+ cursor:pointer;
+ color:#333;
+ font-family:verdana;
+ font-size:11px;
+}
+
+ul#jm_sl_navigation li a {background-color:#6b8e23;text-align:left; margin-top: 2px}
+ul#jm_sl_navigation { left:0px;top:40px;}ul#jm_sl_navigation li:hover { margin-left: 0px;}ul#jm_sl_navigation li a { padding: 11px 0px 11px 10px;margin-left: -2px;}ul#jm_sl_navigation .vk a {background-position: 144px 50%;}ul#jm_sl_navigation .ok a {background-position: 144px 50%;}ul#jm_sl_navigation .moymir a {background-position: 144px 50%;}ul#jm_sl_navigation .facebook a {background-position: 142px 50%;}ul#jm_sl_navigation .twitter a {background-position: 145px 50%;}ul#jm_sl_navigation .google a {background-position: 145px 50%;}ul#jm_sl_navigation .myspace a {background-position: 144px 50%;}ul#jm_sl_navigation .youtube a {background-position: 142px 50%;}ul#jm_sl_navigation .linkedin a {background-position: 145px 50%;}ul#jm_sl_navigation .instagram a {background-position: 153px 50%;} 
+ul#jm_sl_navigation li { margin-left: -140px;-webkit-transition: margin-left 0.3s;-moz-transition: margin-left 0.3s;-ms-transition: margin-left 0.3s;-o-transition: margin-left 0.3s;transition: margin-left 0.3s;}
+  </style>
+<script type="text/javascript" language="JavaScript">
+$('#slider_about').cycle({
+fx: 'fade',
+speed: 1000,
+timeout: 2000,
+});
+</script>
+<script type="text/javascript" language="JavaScript">
+function changeBackend(backend){
+	document.getElementById("backend").value = backend;
+	setAction("showList");
+	}
+function doLoad(value,divid) {
+    var req = new JsHttpRequest();
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+			document.getElementById("ajaxWindow").style.visibility = "hidden";
+            if (divid !== undefined) document.getElementById(divid).innerHTML = req.responseText;
+			else document.getElementById("result").innerHTML = req.responseText;
+        }
+    }
+	var bend = "http://www.greenteam.by/ajax_backend.php";
+    req.open(null, bend, true);// 
+    req.send( { q: value } );
+	}
+	
+// Функция апдейтит содержимое нужного DIV-а
+function update(action,divname,bckend) {
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	if (divname !== undefined) doLoad(document.getElementById('f'),divname);
+	else doLoad(document.getElementById('f'));
+	}
+	
+// Второй параметр задает название Backend файла
+function setAction(action,bckend) {
+	if (bckend !== undefined) document.getElementById("backend").value = bckend;
+	document.getElementById('ajaxWindow').style.visibility = 'visible';
+	document.getElementById('action').value=action;
+	doLoad(document.getElementById('f'));
+	}
+function showMenu(id){
+        document.getElementById(id).style.display="block";
+        }
+function hideMenu(id){
+        document.getElementById(id).style.display="none";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+if (navigator.userAgent.indexOf('Opera') != -1) {
+    document.write("<style>.menu { top: 12px  !important; } .contacts_block { top: 48px; }</style>");
+}
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+
+});
+
+
+</script>
+<!-- pageScripts -->
+
+<link rel="stylesheet" media="screen" href="../_modules/gallery/gallery.css">
+</head>
+<body class="mainbody">
+<!--
+	<div id="rotateText">
+	<a id="reformal_tab" href="http://www.greenteam.by/request/" >Онлайн заявка на сплав</a>
+	</div>
+-->
+<!-- <script type="text/javascript" src="http://www.greenteam.by/_jscript/show/snow.js"></script>-->  
+<table style="width:100%; height:100%;" cellpadding="0" cellspacing="0">
+<ul id="jm_sl_navigation">
+
+<li class="facebook"><a rel="nofollow" href="https://www.facebook.com/zelyonayakamanda" target="_blank"><div class="text_widget">Facebook</div></a></li>
+<li class="youtube"><a rel="nofollow" href="https://www.youtube.com/channel/UCd1OpVx3o2xDGybaDIPWmnA" target="_blank"><div class="text_widget">Youtube</div></a></li>
+<li class="instagram"><a rel="nofollow" href="https://www.instagram.com/greenteam.by/" target="_blank"><div class="text_widget">Instagram</div></a></li>
+
+</ul>
+<tr><td align="center" valign="top">
+
+<table class="mtable" cellpadding="0" cellspacing="0">
+<tr>
+ <td class="mtleft" valign="top" align="right">
+   <!--<h2 style="position: absolute; text-align: center; top: -4px">Сайт находится в стадии редизайна, поэтому возможны временные сбои.<br>Просим прощения за неудобства.</h2>-->
+  <table cellpadding="0" cellspacing="0">
+   <tr><td><a href="../index.html"><img class="loha" src="../p/loha.png" border="0" alt="Турыстычнае прадпрыемства ЗЯЛЕНАЯ КАМАНДА"></a></td></tr>
+   <div class="leftmenu">
+   <tr><td><div class="menu"><ul><li class='menul_1'><a class='btn' href="../index.html">Главная</a></li><br><li class='menul_2'><a class='btn' href="../news.html">Новости</a></li><br><li class='menul_3'><a class='btn' href="../child.html">Выпускной 2019</a></li><br><li class='menul_4'><a class='btn' href="../campchild.html">Детский  лагерь</a></li><br><li class='menul_5'><a class='btn' href="../excursions.html">Экскурсии по Беларуси</a></li><br><li class='menul_6'><a class='btn' href="../ecocamping.html">Экокемпинг</a></li><br><li class='menul_7'><a class='btn' href="../gallery.html">Фотогалерея</a></li><br></ul>
+   </div></td></tr>
+   <tr>
+    <td>
+	 <table style="width:316px;" cellpadding="0" cellspacing="0">
+	  <tr><td>
+	  <div class="contacts_block">
+	          <div id="rotateText">
+        <a id="reformal_tab" href="../request/index.html" >Онлайн заявка на сплав</a>
+        </div>
+
+<div class="contacts">
+
+<div class="phones">
+  +375 29 151 01 87
+  +375 29 634 09 00
+  +375 29 762 58 40
+</div>
+
+<div class="email">
+  <h1>e-mail:</h1> 
+  <a href="mailto:info@greenteam.by">info@greenteam.by</a>
+</div>
+
+<div class="address">
+223036, ул. Минская 46, г. Заславль, Минский район, Беларусь
+</div>
+
+<div class="regnum">
+<a href="../uploaded/licenceGREENTEAM.jpeg" target=_blank><img src="../uploaded/licenceGREENTEAM.jpg" width=150px height=auto ></a>
+<a href="../be/raschet/index.html" target=_blank>
+<h5 style="position:relative; left: 13px; bottom: -10px;">Способы оплаты:</h5>
+<img src="../p/logo-raschet.jpg" width=150px; style="position: relative; bottom: -10px;"></a>
+</div>
+</div>
+
+       
+	  </div>
+</td></tr>
+	  <tr>
+ <td>
+  <div style='width:300px; margin-left:16px; margin-top:30px;'></div>
+ </td>
+</tr>
+	 </table>
+    </td>
+   </tr>
+   </div> <!-- left menu -->
+  </table>
+ </td>
+ <td class="mtright" valign="top" align="left">
+ <table class="rtable" cellpadding="0" cellspacing="0">
+ <tr><td class="rtab" valign="top">
+  <div style="text-align:right; display:block; height:40px; width:620px; float:none;"><table style="width:620px"><tr><td><div class="langsite">
+<div class="lbtn"><a class="lsvitch" href="../be/index.html">BY</a></div>
+<div class="lbtnact"><span class="lsvitch">RU</span></div>
+<div class="lbtn"><a class="lsvitch" href="../en/index.html">EN</a></div>
+</div></td></tr></table></div>
+  <div class="icons">
+  <div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Сплавы по рекам</div><img class="banicon splyvy" src="../p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="../boatinginfo/index.html#weekend">Сплавы выходного дня</a>
+         <a href="../boatinginfo/index.html#menu_3">Прокат</a>
+         <a href="../boatinginfo/index.html#menu_4">Корпоративный сплав</a>
+         <a href="http://greenteam.by/uploaded/spisok_veshej.pdf">Как одеться на сплав</a>
+         <a href="../waterroutesdescriptions/index.html">Водные маршруты</a>
+   </div>
+</div>
+
+<!--COMMENTED OUT
+
+<div class="static" onmouseover='showMenu("menu1")' onmouseout='hideMenu("menu1")'>
+        <div class="slider_text">Горнолыжный сезон 2015</div><img class="banicon splyvy" src="./p/sl_sp_a.png" />
+   <div class="subm" id="menu1">
+         <a href="http://www.greenteam.by/gtourism2013#GROUP">Групповые горнолыжные туры - Словакия</a>
+         <a href="http://www.greenteam.by/gtourism2013#CHILD">Детско-юношеский тур - Тироль</a>
+         <a href="http://www.greenteam.by/gtourism2013#BOOKING">Бронирование проживания</a>
+         <a href="http://www.greenteam.by/gtourism2013#TOURISTS">Для индивидуальных туристов</a>
+         <a href="http://www.greenteam.by/gtourism2013#SPEC">Спецпредложения</a>
+   </div>
+</div>-->
+
+<div class="static" onmouseover='showMenu("menu2")' onmouseout='hideMenu("menu2")'>
+        <div class="slider_text slider_div"><span>Приключенческие экскурсии</span></div>
+   <div class="subm subm_center" id="menu2">
+         <a href="../alaskachristmas/index.html">Alaska Christmas</a>
+         <a href="../child/index.html">ЛАКОТА ВАШТЭ</a>
+
+         </div>
+</div>
+
+
+<div class="static" onmouseover='showMenu("menu3")' onmouseout='hideMenu("menu3")'>
+        <div class="slider_text">Детский лагерь</div><img class="banicon" src="../p/sl_e_a.png" />
+   <div class="subm" id="menu3">
+         <a href="../campchild.html">Летний лагерь Зелёная Команда</a>
+         <a href="../skischool.html">Весенний лагерь Зелёная Команда</a>
+        
+   </div>
+</div>
+  </div>
+  </td></tr>
+ <tr>
+  <td class="tbl" style="height:100%;" valign="top">
+   <div class="mtblock">
+	<h1>Фотогалерея</h1>
+	<hr class="header_hr">
+	<form method="post" name="f" id="f" enctype="multipart/form-data" onsubmit="return false">
+	<input type=hidden id="backend" name="backend" size="30" value="user_userPhotos">
+	<input type=hidden id="action" name="action" size="50" value="showList">
+	<div name="result" id="result" style="padding-left:0px;">
+	<div style="float:none; width: 677px;"><p><table width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-53/index.html"><img class="galIcon" src="../uploaded/gallery/gallery53.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-53/index.html">Приключенческая экскурсия ЛАКОТА ВАШТЭ</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-43/index.html"><img class="galIcon" src="../uploaded/gallery/gallery43.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-43/index.html">Сплавы </a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-79/index.html"><img class="galIcon" src="../uploaded/gallery/gallery79.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-79/index.html">Детский лагерь "Зелёная команда"</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-73/index.html"><img class="galIcon" src="../uploaded/gallery/gallery73.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-73/index.html">Экокемпинг "Засьцянак Скрыплеў"</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-50/index.html"><img class="galIcon" src="../uploaded/gallery/gallery50.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-50/index.html">Tourism & Fun фестиваль (Лето)</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-63/index.html"><img class="galIcon" src="../uploaded/gallery/gallery63.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-63/index.html">Фолькпрограммы</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-26/index.html"><img class="galIcon" src="../uploaded/gallery/gallery26.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-26/index.html">Горный туризм</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-28/index.html"><img class="galIcon" src="../uploaded/gallery/gallery28.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-28/index.html">Веревочный курс</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-76/index.html"><img class="galIcon" src="../uploaded/gallery/gallery76.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-76/index.html">Приключенческая экскурсия Alaska Christmas</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-57/index.html"><img class="galIcon" src="../uploaded/gallery/gallery57.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-57/index.html">Горнолыжный Драгобрат </a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-72/index.html"><img class="galIcon" src="../uploaded/gallery/gallery72.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-72/index.html">Горнолыжный сезон 2014. Ишгль. Австрия</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-47/index.html"><img class="galIcon" src="../uploaded/gallery/gallery47.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-47/index.html">Tourism & Fun фестиваль (Зима)</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-56/index.html"><img class="galIcon" src="../uploaded/gallery/gallery56.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-56/index.html">Green Team Ski school. Austria. Tyrol. March 2013.</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-23/index.html"><img class="galIcon" src="../uploaded/gallery/gallery23.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-23/index.html">Горные лыжи</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-64/index.html"><img class="galIcon" src="../uploaded/gallery/gallery64.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-64/index.html">Экскурсия-анимация "Калядныя прыгоды на Дзiкiм Захадзе"</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-75/index.html"><img class="galIcon" src="../uploaded/gallery/gallery75.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-75/index.html">Экологический сплав по реке Ислочь</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-80/index.html"><img class="galIcon" src="../uploaded/gallery/gallery80.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-80/index.html">Фольк хостел Маруся</a>
+				</td></tr>
+				</table>
+				</div><div class='galprev'><table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr><td width="100" align="center" valign="middle">
+				 <a href="gallery-83/index.html"><img class="galIcon" src="../uploaded/gallery/gallery83.jpg" height="80" hspace="8"></a>
+				</td><td valign="middle">
+				<a class='galName' href="gallery-83/index.html">Фольк апартамент Дануся</a>
+				</td></tr>
+				</table>
+				</div></td></tr></table></p><div style='clear:both; margin-top:-8px; margin-bottom:10px; margin-left: 547px;'>
+	<div class='pluso pluso-theme-bewel pluso-round pluso-small'><div class='pluso-more-container'><a class='pluso-more' href='../index.html'></a><ul class='pluso-counter-container'><li></li><li class='pluso-counter'></li><li></li></ul></div><a class='pluso-facebook'></a><a class='pluso-twitter'></a><a class='pluso-vkontakte'></a></div>
+</div></div>
+	</div>
+	</form>
+	<br></div>
+  </td>
+ </tr>
+ <tr>
+  <td class="foot"><span class="smaller">При копировании материалов просьба указывать ссылку на сайт www.greenteam.by
+<br><a href="../index.html">Зеленая Команда © 2011-2013</a></span></td>
+ </tr>
+</table>
+ </td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+
+ 
+<TABLE id="ajaxWindow">
+ <TR>
+  <TD align="center">
+   <TABLE class="tb-image">
+    <TR>
+	 <TD id="here_img"><img class="tn-image" src="../p/loadingAnimation.gif" alt=""></TD>
+	</TR>
+   </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722797-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--<script type="text/javascript" src="http://www.greenteam.by/_jscript/iload/iLoad.js"></script>-->
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="http://www.greenteam.by/_jscript/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	jQuery("a[rel=group]").fancybox({
+		'transitionIn'      : 'none',
+	        'transitionOut'     : 'none',
+	        'titlePosition'     : 'over',
+	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+	                    return '<span id="fancybox-title-over">Фотография ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>';
+	                }
+	});
+	
+});
+</script>
+<div id="toTop">Наверх</div>
+<!-- Запросы: 5--></body>
+</html>

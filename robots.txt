@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /session/
+Disallow: /admin/
+Disallow: /modules/
+Disallow: /_jscript/
+Disallow: /_templates/
+Disallow: /thickbox/
+Disallow: /_cache/
+Disallow: /_counter/
+Disallow: /_core/
+Disallow: /lang/
+Allow: / 
+Host: www.greenteam.by
+Sitemap: http://www.greenteam.by/sitemap.xml
