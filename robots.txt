@@ -11,4 +11,4 @@ Disallow: /_core/
 Disallow: /lang/
 Allow: / 
 Host: www.greenteam.by
-Sitemap: http://www.greenteam.by/sitemap.xml
+Sitemap: https://www.greenteam.by/sitemap.xml
