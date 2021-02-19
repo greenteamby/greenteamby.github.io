@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /session/
 Disallow: /admin/
 Disallow: /modules/
-Disallow: /_jscript/
 Disallow: /_templates/
 Disallow: /thickbox/
 Disallow: /_cache/
